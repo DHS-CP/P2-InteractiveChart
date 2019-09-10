@@ -48,25 +48,26 @@ public abstract class Student extends Actor
      * @param String myNameFile  is the name of the sound file to play, ex "mySound.wav",
      */
     
-    public int GetRow(){
+    public int GetRow(){//row where LacPhong sits
         return myRow;
     }
     
-    public int GetSeat(){
+    public int GetSeat(){//column where LacPhong sits
         return mySeat;
     }
     
     public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+        Greenfoot.playSound(myNameFile);//plays sound file associated with LacPhong
     }
     
-    public void returnToSeat(){
-        setLocation(mySeat,myRow);
+    public void returnToSeat(int n){
+        setLocation(mySeat,myRow);//sets location of LacPhong as seat and row
+        turn (n);
     }
     public void sitDown(){
-        returnToSeat();
-        setImage(portraitFile);
-        sitting=true;
+        returnToSeat(0);//returns to seat
+        setImage(portraitFile);//returns image to original image
+        sitting=true;//boolean for sitting
     }
         
  
