@@ -21,7 +21,7 @@ public class Classroom extends World
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
         super(10, 6, 130); 
 
-        prepare(); 
+        prepare();
     }
     
     /**
@@ -34,14 +34,10 @@ public class Classroom extends World
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
 
-        /* Example 
+        /* Example */
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();*/
-        
-        JoshBeatty joshbeatty = new JoshBeatty("Josh", "Beatty", 1, 2);
-        addObject(joshbeatty, 2, 1);
-        joshbeatty.sitDown();
+        kilgoretrout.sitDown();
          
         
 
