@@ -8,6 +8,9 @@ import java.util.ArrayList;
  */
 public abstract class Student extends Actor
 {
+    
+   static protected int numStudents = 0;
+   
    //Instance variables
    public String firstName;
    public String lastName;

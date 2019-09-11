@@ -38,6 +38,12 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
+        
+         
+        RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
+        addObject(ritvik, 5, 3);
+        ritvik.sitDown();
+        
 
         EthanLau ethanlau  = new EthanLau("Ethan", "Lau", 5, 2);
         addObject(ethanlau, 5, 2);
