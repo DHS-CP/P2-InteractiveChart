@@ -22,6 +22,7 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
      * 
      */
     public joshkoh(String f, String l, int r, int s) {
+        numStudents += 1;
         firstName=f;
         lastName=l;
         myRow=r;
@@ -41,6 +42,7 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
      * @return Returns nothing.
      */
     public joshkoh() {
+        numStudents += 1;
         firstName="Josh";
         lastName="Koh";
         myRow=1;
@@ -80,7 +82,7 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
                 answerQuestion();
                 
                 // When the question is answered, the actor will then sit down.
-                sitDown();
+                //sitDown();
             }
                     
         }
@@ -120,18 +122,29 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
                 {
                     q=Greenfoot.ask("I usually code in C++, so although the syntax was somewhat similar, I found the way that Java defines \n" +
                     "methods was really odd. In addition, the fact that Java can't do basic integer/double arithmetic somewhat irks me. \n" + 
-                    "That's all I really have to say; I'll sit down now.");
+                    "That's all I really have to say; may I sit down?");
                 }
-                else 
-                {
-                    q=Greenfoot.ask("Alright, I'll get seated.");
-                }
+            }
+            if (q.toLowerCase().contains("students")) 
+            {
+                q=Greenfoot.ask("There are " + numStudents + " students in my class. Can I sit down now?");
+            }
+            if (q.toLowerCase().contains("siblings"))
+            {
+                q=Greenfoot.ask("I have " + numberOfSiblings() + " siblings. Can I sit down?");
+            }
+            if (q.toLowerCase().equals("yes"))
+            {
+                sitDown();
             }
             else 
             {
-                q=Greenfoot.ask("That isn't a question I can answer. I'll sit down now.");
+                q=Greenfoot.ask("Can I please, please sit down now? My legs hurt.");
             }
-        
+            if (q.toLowerCase().equals("yes"))
+            {
+                sitDown();
+            }
         }
     /**
      * 
@@ -221,5 +234,7 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
     public void myHobby(String s) {
         System.out.println(s);
     }
-
+    public int numberOfSiblings() {
+        return 2;
+    }
 }

@@ -23,6 +23,7 @@ public abstract class Student extends Actor
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    public String redboneFile;
+   protected int numStudents;
    Classroom clas = (Classroom) getWorld();
    public void setRow(int r){
        myRow=r;
