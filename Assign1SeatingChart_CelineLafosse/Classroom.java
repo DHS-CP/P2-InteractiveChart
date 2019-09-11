@@ -35,8 +35,8 @@ public class Classroom extends World
         // Make sure to match your first and last name to the class file you created.
 
         /* Example */
-        CelineLafosse celinelafosse = new CelineLafosse("Celine", "Lafosse", 4, 3);
-        addObject (celinelafosse, 4, 3);
+        CelineLafosse celinelafosse = new CelineLafosse("Celine", "Lafosse", 4, 2);
+        addObject (celinelafosse, 4, 2);
         celinelafosse.sitDown();
          
         
