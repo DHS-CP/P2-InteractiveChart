@@ -19,9 +19,9 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
      * @param String l (lastname)
      * @param int r (row of seating arrangement)
      * @param int s (seat number within row seating arrangement)
-     * 
+     * Adds one to numStudents variable
      */
-    String speecharray [][] = new String[13][2];
+    String speecharray [][] = new String[14][2];
     public JonathanWang(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
@@ -32,10 +32,12 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
+        
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
-     * 
+     * Adds one to the numStudents variable
      */
     public JonathanWang() {
         firstName="Jonathan";
@@ -48,6 +50,7 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     
      /**
@@ -117,10 +120,12 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
         speecharray[11][1] = "I refuse to believe that you don't know what that is. May I sit down?";
         speecharray[12][0] = "badminton";
         speecharray[12][1] = "I refuse to believe that you don't know what that is. May I sit down?";
+        speecharray[13][0] = "students";
+        speecharray[13][1] = "There are " + numStudents + " students in this class!";
         String q=Greenfoot.ask("What would you like to know? ");
         int loop = 1;
         while (loop ==1) {
-        for (int r = 0; r < 13; r++) {
+        for (int r = 0; r < 14; r++) {
         if (q.toLowerCase().contains(speecharray[r][0])) {
                 q = Greenfoot.ask(speecharray[r][1]);
         }

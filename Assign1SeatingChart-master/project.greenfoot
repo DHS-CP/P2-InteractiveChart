@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Sep 06 09:24:07 PDT 2019
+#Tue Sep 10 18:01:52 PDT 2019
 target24.type=ClassTarget
 target16.name=MatthewAdrian
 target13.editor.width=900
@@ -480,9 +480,9 @@ dependency1.to=Classroom
 target18.showInterface=false
 target38.name=NoorHaider
 target21.type=AbstractTarget
-mainWindow.y=23
+mainWindow.y=151
 target13.name=AdrianLiu
-mainWindow.x=20
+mainWindow.x=94
 target16.y=480
 target16.x=10
 dependency28.from=Classroom
@@ -582,8 +582,8 @@ dependency19.to=MatthewAdrian
 dependency9.type=UsesDependency
 target21.editor.height=700
 class.GustavoSilvera.superclass=Student
-editor.fx.0.y=234
-editor.fx.0.x=872
+editor.fx.0.y=111
+editor.fx.0.x=909
 dependency8.to=GustavoSilvera
 class.AshishPanjwani.superclass=Student
 target26.showInterface=false
