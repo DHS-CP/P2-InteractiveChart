@@ -28,8 +28,8 @@ public class Classroom extends World
      * Prepare the world for the start of the program. That is: create the initial
      * objects and add them to the world.
      */
-   
-     private void prepare()
+
+    private void prepare()
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
@@ -38,13 +38,10 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
-        
+
         EthanLau ethanlau  = new EthanLau("Ethan", "Lau", 5, 2);
         addObject(ethanlau, 5, 2);
         ethanlau.sitDown();
-         
-        
-
 
     }  
 }
