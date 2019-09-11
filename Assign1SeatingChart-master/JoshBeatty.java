@@ -22,6 +22,7 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
      * 
      */
     public JoshBeatty(String f, String l, int r, int s) {
+        numStudents += 1;
         firstName=f;
         lastName=l;
         myRow=r;
@@ -38,6 +39,7 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
      * of the classroom.
      */
     public JoshBeatty() {
+        numStudents += 1;
         firstName="Josh";
         lastName="Beatty";
         myRow=2;
@@ -107,6 +109,9 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
         else if(q.contains("siblings")||q.contains("brother") && q.contains("sister")){
             q=Greenfoot.ask("I have " + numberOfSiblings() +" siblings... May I sit down?");
         }
+        else if(q.contains("student")){
+            q=Greenfoot.ask("There are " + numStudents + " students in my class... May I sit down?");
+        }
         else{
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
@@ -116,8 +121,9 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
         }
     }
     /**
-     * This is a local method specific to the JoshBeatty class used to animate the character once the image is clicked on.
-     * You can write your own methods to perform your own animation for your character/avatar.
+     *  This Method animates the actor into standing up.
+     *  This method uses a 2d array with 3 coloums where each colom represtns an r, g, or b, value whith each row being a coloum.
+     *  This method rotates and enlarges the actor and then reverses the change.
      */
     public void coolMethod(){
         int numberRotations = (int)(Math.random() * (8)) + 3;
@@ -150,15 +156,27 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
         setImage(standingFile);
         returnToSeat();
     }
+     /**
+     * Prints the string that is passed to it.
+     */
     public void myHobby(String s) {
          System.out.println(s);
     }
+     /**
+     * Returns my number of siblings as an int.
+     */
     public int numberOfSiblings(){
         return 5;
     }
+     /**
+     * Return my number of brothers as an int;
+     */
     public int numberOfBrothers(){
         return 1;
     }
+     /**
+     * Returns my number of sisters as an int.
+     */
     public int numberOfSisters(){
         return 4;
     }
