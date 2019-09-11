@@ -57,7 +57,7 @@ public class RitviksiddhaPenchala extends Student implements SpecialInterestOrHo
         mySeat=5;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile="bad_pic_of_rit.jpg";
-       standingFile="trash_walk.PNG";
+       standingFile="rit_standing_bighead.PNG";
         soundFile="ritviksiddhapenchala.wav";
         setImage(portraitFile);
         sitting=true;
