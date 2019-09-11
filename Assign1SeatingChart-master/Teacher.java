@@ -15,7 +15,7 @@ public abstract class Teacher extends Actor
    public static final int mySeat=4;        // seats are left to right, 1-8
    
    public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+        //Greenfoot.playSound(myNameFile);
         
     }
     
