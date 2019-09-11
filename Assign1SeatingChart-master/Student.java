@@ -1,10 +1,12 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
+ * This class contains the abstract methods for the student methods.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * 
+ * @author Parth Joshi
+ * @version 09/11/19
  */
 public abstract class Student extends Actor
 {
@@ -14,7 +16,8 @@ public abstract class Student extends Actor
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
-   protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created. 
+   protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created.                          
+   
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
@@ -24,17 +27,30 @@ public abstract class Student extends Actor
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
+   /**
+    * This method gets the row of your seat
+    */
    public void setRow(int r){
        myRow=r;
     }
     
+    /**
+    * This method gets the column of your seat
+    */
     public void setSeat(int s){
        mySeat=s;
     }
     
+    /**
+    * This method gets your name
+    */
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
-     public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
+     
+    /**
+    * This abstract method is for answering questions
+    */                                 
+    public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
                                             // in your own class file.
                                             // Requirement - prompt and accept a question in some fashion.
                                             // Based on question, give appropriate response.
@@ -52,17 +68,30 @@ public abstract class Student extends Actor
         return myRow;
     }
     
+    /**
+    * This method gets your seat
+    */
     public int GetSeat(){
         return mySeat;
     }
     
+    /**
+    * This method plays your name from the voice file
+    */
     public void sayName(String myNameFile){
         Greenfoot.playSound(myNameFile);
     }
     
+    /**
+    * This method returns the student to his/her seat
+    */
     public void returnToSeat(){
         setLocation(mySeat,myRow);
     }
+    
+    /**
+    * This method sits the student down
+    */
     public void sitDown(){
         returnToSeat();
         setImage(portraitFile);

@@ -1,23 +1,28 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BobKaehms here.
+ * This class creates Mr. Kaehms as a teacher in this classroom
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Parth Joshi 
+ * @version 09/11/19
  */
 public class MrKaehms extends Teacher //implements JustForFun
 {
     
 
    
-    
+    /**
+    * This methodsets location of the Mt.Kaehms object
+    */
     public MrKaehms () {
 
-    setLocation(mySeat,myRow);
+        setLocation(mySeat,myRow);
  
     }
     
+    /**
+    * This method gives the action for the Mr.Kaehms object
+    */
     public void act() 
     {
         // Add your action code here.
@@ -26,6 +31,10 @@ public class MrKaehms extends Teacher //implements JustForFun
               sayName("bobkaehms.wav");
         }
     } 
+    
+    /**
+    * This method says the name of the object
+    */
     public void getName(){
         System.out.println("\n My name is Bob Kaehms");
     }

@@ -4,10 +4,11 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * This class creates the classroom where everybody is placed. It also instantiates
+ * each student in the class.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Parth Joshi 
+ * @version 09/11/19
  */
 public class Classroom extends World
 {
@@ -35,10 +36,9 @@ public class Classroom extends World
         // Make sure to match your first and last name to the class file you created.
 
         /* Example */
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
-         
+        ParthJoshi parthjoshi = new ParthJoshi("Parth", "Joshi", 1, 6);
+        addObject(parthjoshi, 1, 6);
+        parthjoshi.sitDown();
         
 
 
