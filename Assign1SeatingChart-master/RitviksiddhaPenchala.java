@@ -53,7 +53,7 @@ public class RitviksiddhaPenchala extends Student implements SpecialInterestOrHo
     public RitviksiddhaPenchala() {
         firstName="Ritviksiddha";
         lastName="Penchala";
-        myRow=3;
+        myRow=3; 
         mySeat=5;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile="bad_pic_of_rit.jpg";
