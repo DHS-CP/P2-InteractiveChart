@@ -32,12 +32,15 @@ public class Classroom extends World
      private void prepare()
     {
         // Add three lines to this doc with your class constructor and your row and seat number
-        // Make sure to match your first and last name to the class file you created.
+        // Make sure to match your first and lasts name to the class file you created.
 
         /* Example */
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
+        NihaSuravarjjala nihasuravarjjala = new NihaSuravarjjala("Niha", "Suravarjjala", 4, 4);
+        addObject(nihasuravarjjala, 4, 4);
+        nihasuravarjjala.sitDown();
+        
+        
+   
          
         
 
