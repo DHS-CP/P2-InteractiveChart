@@ -9,6 +9,9 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
+
+
+
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
@@ -23,12 +26,13 @@ public class Classroom extends World
 
         prepare();
     }
+   
+    
     
     /**
      * Prepare the world for the start of the program. That is: create the initial
      * objects and add them to the world.
      */
-   
      private void prepare()
     {
         // Add three lines to this doc with your class constructor and your row and seat number
@@ -40,7 +44,17 @@ public class Classroom extends World
         kilgoretrout.sitDown();
          
         
-
-
+        VikasUmmadisetty vikasu = new VikasUmmadisetty("Vikas", "Ummadisetty", 4,5);
+        addObject(vikasu, 4, 5);
+        vikasu.sitDown();
+        
+        /*
+        while(true) {
+            if(vikasummadisetty.animateStart) {
+                animation();
+            }
+            Greenfoot.delay(10);
+        }
+        */
     }  
 }
