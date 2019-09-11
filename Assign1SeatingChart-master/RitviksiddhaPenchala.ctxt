@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=RitviksiddhaPenchala
+comment0.text=\r\n\ The\ class\ RitviksiddhaPenchala\ is\ a\ subclass\ of\ the\ Student\ class\ that\ has\ specific\ information\ and\ methods\ about\ Ritviksiddha\ Penchala.\r\n\ \r\n\ @Ritviksiddha\ Penchala\r\n\ @09/05/2019\r\n
+comment1.params=f\ l\ r\ s
+comment1.target=RitviksiddhaPenchala(java.lang.String,\ java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ the\ Ritviksiddha\ Penchala\ class.\r\n\ Constructors\ are\ special\ methods\ with\ the\ same\ exact\ name\ as\ the\ class\ name.\ \ \r\n\ Constructors\ to\ not\ have\ return\ types.\r\n\ Constructors\ can\ be\ overloaded.\ This\ means\ we\ can\ call\ a\ constructor\ with\ different\ sets\ of\ parameter\r\n\ lists\ to\ initalize\ for\ different\ conditions\ (depending\ on\ what\ constructors\ have\ been\ written.\r\n\ @param\ String\ f\ (firstname)\r\n\ @param\ String\ l\ (lastname)\r\n\ @param\ int\ r\ (row\ of\ seating\ arrangement)\r\n\ @param\ int\ s\ (seat\ number\ within\ row\ seating\ arrangement)\r\n\ \r\n
+comment2.params=r\ s
+comment2.target=RitviksiddhaPenchala(int,\ int)
+comment3.params=
+comment3.target=RitviksiddhaPenchala()
+comment3.text=\r\n\ Default\ constructor,\ if\ you\ don't\ pass\ in\ a\ name\ and\ seating\ location\r\n\ Pay\ attention\ to\ how\ the\ row\ and\ seat\ variables\ set\ the\ location\ of\ the\ image.\ \ 1,1\ is\ the\ first\ cell\ in\ the\ upper\ left\r\n\ of\ the\ classroom.\r\n\ This\ is\ the\ constructor\ that\ is\ prefereed\ as\ it\ has\ all\ the\ specific\ details\ about\ this\ class\ and\ specific\ file\ references.\r\n
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ KilgoreTrout\ actor\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n\ It\ will\ only\ carry\ out\ the\ movement\ and\ answer\ questions\ once\ it\ has\ been\ "clicked"\ on.\ \r\n
+comment5.params=
+comment5.target=void\ getName()
+comment5.text=\r\n\ Prints\ the\ first\ and\ last\ name\ to\ the\ console\r\n
+comment6.params=
+comment6.target=void\ answerQuestion()
+comment6.text=\r\n\ This\ method\ needs\ to\ allow\ the\ user\ to\ interact\ with\ the\ student\ through\ a\ question\ and\ answer\ interface,\ and\ provide\r\n\ some\ mechanism\ that\ allows\ the\ student\ to\ sit\ down\ once\ the\ Q&A\ session\ ends.\ \ \r\n\ \r\n\ The\ original\ method\ has\ been\ changed\ so\ that\ it\ is\ looped\ until\ some\ kind\ of\ resolution\ is\ reached\ in\ the\ conversation.\ In\ addition,\ there\ is\ now\ second-level\ questioning\ about\ the\ summer\ homework\ concepts.\r\n
+comment7.params=
+comment7.target=void\ randomMovement()
+comment7.text=\r\n\ This\ is\ the\ movement\ method\ used\ only\ for\ RitviksiddhaPenchala\r\n\ It\ will\ make\ the\ sprite\ randomly\ jump\ around\ the\ screen\ and\ then\ randomize\ the\ transparency\ and\ size\ in\ each\ state\ (using\ 2DArrays)\r\n
+comment8.params=s
+comment8.target=void\ myHobby(java.lang.String)
+numComments=9
