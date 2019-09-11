@@ -1,10 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The  class is used as a model that represents my seating location, name, hobbies, and hardest concepts in Java in AP CSA
+ * The  class is used as a model that represents my seating location, name, hobbies, and hardest concepts in Java in AP CSA. 
+ * Once the user clicks on my image in my correct seat location, the RupaliSarathy actor animates by 
+ * moving in random locations across the screen. Once it returns to its seat location, the user can ask 
+ * the actor questions based on the hardest concepts in Java. After answering the question, the actor can
+ * sit down.
  * 
  * @author Rupali Sarathy
- * @version 2.0 Sep 5, 2019
+ * @version 2.0 Sep 11, 2019
  */
 public class RupaliSarathy extends Student implements SpecialInterestOrHobby
 {
@@ -12,7 +16,7 @@ public class RupaliSarathy extends Student implements SpecialInterestOrHobby
     
     
     /**
-     * Constructor for the KilgoreTrout class.
+     * Constructor for the RupaliSarathy class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
@@ -33,11 +37,12 @@ public class RupaliSarathy extends Student implements SpecialInterestOrHobby
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
-     * The default constructor that defines my full name and seat locaiton.
-     * Sets images and sound files for my portrait. Location is defined by seat, and (1,1) is the upper corner
-     * of the classroom.
+     * The default constructor that defines my full name and seat locaiton. This also sets 
+     * images and sound files for my portrait. Location is defined by seat, and (1,1) is the upper corner
+     * of the classroom. My seat is (3,4) in respect to seat (1,1).
      */
     public RupaliSarathy() {
         firstName="Rupali";
@@ -86,37 +91,31 @@ public class RupaliSarathy extends Student implements SpecialInterestOrHobby
     } 
     
     /**
-     * Prints the first and last name to the console
+     * Prints the first and last name to the console (My name is Rupali Sarathy).
      */
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
     }
     /**
-     * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
+     * This method needs to allow the user to interact with the RupaliSarathy actor through a question and answer interface, and provides
+     * some mechanism that allows the student to sit down once the Q&A session ends.  Once the user clicks on the student actor, the 
+     * RupaliSarathy actor responds with their name and asking what they would like to know. The user can input a question regarding the 
+     * hardest concepts in JAVA, and the RupaliSarathy actor will respond with their answer. After this, they will also ask if they can sit
+     * down, and if the user says yes, the actor will return to their sitting image.
      */
 
     public void answerQuestion(){
         String q=Greenfoot.ask("My name is Rupali Sarathy! What would you like to know?");
         if (q.contains("hard")){
           q=Greenfoot.ask("2D arrays, recursion, and merge sort... May I sit down?");
-          /*if (q.equals("2D arrays")){
-              q=Greenfoot.ask("A 2D array has a type such as int[][] or String[][], with two pairs of square brackets. The elements of a 2D array are arranged in rows and columns, and the new operator for 2D arrays specifies both the number of rows and the number of columns. May I sit down?");
-              if (q.equals("yes")){
+          }
+          if (q.equals("yes")){
                 Greenfoot.delay(10);
-                sitDown();}
-          if (q.equals("recursion")){
-              q=Greenfoot.ask("A recursion is a method that calls itself continuously. May I sit down?");
-              if (q.equals("yes")){
-                Greenfoot.delay(10);
-                sitDown();}
-          if (q.equals("merge sort")){
-              q=Greenfoot.ask("Merge sort is a divide and conquer algorithm. It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves. May I sit down?");
-              if (q.equals("yes")){
-                Greenfoot.delay(10);
-                sitDown();}*/}
+                sitDown();
+            }
+        else if (q.contains("students")){
+          q=Greenfoot.ask("There are " + numStudents + " students in this class.... May I sit down?");
+          }
           if (q.equals("yes")){
                 Greenfoot.delay(10);
                 sitDown();
@@ -132,8 +131,8 @@ public class RupaliSarathy extends Student implements SpecialInterestOrHobby
 }
 
     /**
-     * This is a local method specific to the RupaliSarathy class used to animate the character once the image is clicked on.
-     * This method makes the actor RupaliSarathy travel around the class in random locations.
+     * This is a local method specific to the RupaliSarathy class used to animate the character once the image is clicked o. 
+     * This method makes the actor RupaliSarathy travel around the class in random locations using a 2D array.
      */
     
    public void circleClass(){
@@ -158,7 +157,10 @@ public class RupaliSarathy extends Student implements SpecialInterestOrHobby
         }
     }
 
-  
+/**
+     * This is a local method specific to the RupaliSarathy class. This defines the hobby of
+     * the Rupalisarathy actor, which will be printed out to the console.
+     */  
  public void myHobby(String s) {
          System.out.println(s);
 }
