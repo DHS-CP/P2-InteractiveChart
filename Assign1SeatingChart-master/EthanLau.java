@@ -8,15 +8,13 @@ import static java.lang.Math.*;
  * @author Ethan Lau
  * @version 2.0 Aug 13, 2019
  */
-public class EthanLau extends Student implements SpecialInterestOrHobby
+public class EthanLau extends Student implements SpecialInterestOrHobby, StudentAthlete 
 {
 
+
     /**
-     * Constructor for the KilgoreTrout class.
-     * Constructors are special methods with the same exact name as the class name.  
-     * Constructors to not have return types.
-     * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
-     *  lists to initalize for different conditions (depending on what constructors have been written.
+     * Constructor for the EthanLau class.
+     *  lists to initalize for different conditions (depending on what constructors have been written)
      * @param String f Ethan
      * @param String l Lau
      * @param int r 5
@@ -33,23 +31,23 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+
     }
     /**
-     * Default constructor, if you don't pass in a name and seating location
-     * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
-     * of the classroom.
+     * Default Constructor of the EthanLau class
+     * 
      */
     public EthanLau() {
         firstName="Ethan";
         lastName="Lau";
         myRow=5;
         mySeat=2;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".JPG";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+
     }
     
      /**
@@ -67,9 +65,10 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to go places!");
-            
-                circleClass();  // Directs Movement of Ethan Lau
+                myHobby("I like to go places around the world, whether it be hiking in the desert to skiing in the snow.");
+                mySport("I like to play tennis");
+                
+                moveClass();  // Directs Movement of Ethan Lau
             }
             else {
                 answerQuestion();
@@ -80,7 +79,7 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
     } 
     
     /**
-     * Prints the first and last name to the console
+     * getName - Prints the first and last name to the console
      */
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
@@ -149,6 +148,8 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
           q=Greenfoot.ask("2D arrays, recursion, variable scope, and inheritance... May I sit down?");
           maySit(q);
         }
+        else if (q.contains("l")){
+        } 
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?");
           maySit(q);
@@ -158,7 +159,7 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the EthanLau class used to animate the character once the image is clicked on.
      * You can write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+    public void moveClass(){
         int[][] position = new int[100][2];
         int[][] rotate = new int[10][6];
         for (int row = 0; row < position.length; row++) {
@@ -175,34 +176,23 @@ public class EthanLau extends Student implements SpecialInterestOrHobby
             setRotation(rotate[position[row][0]][position[row][1]]);
             Greenfoot.delay(1);
         }
-        /*
-         Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-        */
+
            Greenfoot.delay(20);
            returnToSeat();
     }
-     public void myHobby(String s) {
-         System.out.println(s);
-}
+     
+    /**
+     * myHobby - 
+     */
+    public void myHobby(String s) {
+        System.out.println(s);
+    }
+    
+    /**
+     * mySport 
+     */
+    public void mySport(String s){
+        System.out.println(s);
+    }
 
 }
