@@ -3,8 +3,8 @@ import java.lang.Math;
 /**
  * The VikasUmmadisetty class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
+ * @author Vikas Ummadisetty
+ * @version 2.0 Sept 11, 2019
  */
 public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby, numberOfSiblings
 {
