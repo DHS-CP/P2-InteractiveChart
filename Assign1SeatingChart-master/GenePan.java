@@ -33,6 +33,7 @@ public class GenePan extends Student implements SpecialInterestOrHobby, NumberOf
         actionFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-poof.jpg";
         setImage(portraitFile); 
         sitting=true;
+        numStudents++;
     }
     /**
      * Default constructor. If no parameters are specified when creating a GenePan object, it will set certain default options.
@@ -51,7 +52,6 @@ public class GenePan extends Student implements SpecialInterestOrHobby, NumberOf
         setImage(portraitFile);
         sitting=true;
     }
-    
      /**
      * Act - do whatever the Gene Pan actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -78,7 +78,6 @@ public class GenePan extends Student implements SpecialInterestOrHobby, NumberOf
                     
         }
     } 
-    
     /**
      * Prints the first and last name to the console
      */
