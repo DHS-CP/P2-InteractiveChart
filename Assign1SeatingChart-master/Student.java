@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
+ * This class is the base code, that my personal class extends from
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -14,7 +14,6 @@ public abstract class Student extends Actor
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
-   protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created. 
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
@@ -57,7 +56,7 @@ public abstract class Student extends Actor
     }
     
     public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+       Greenfoot.playSound(myNameFile);
     }
     
     public void returnToSeat(){

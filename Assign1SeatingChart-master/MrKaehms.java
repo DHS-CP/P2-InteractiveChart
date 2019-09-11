@@ -22,7 +22,7 @@ public class MrKaehms extends Teacher //implements JustForFun
     {
         // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
-         //   getName(); 
+           // getName(); 
               sayName("bobkaehms.wav");
         }
     } 
