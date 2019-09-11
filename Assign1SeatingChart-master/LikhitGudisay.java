@@ -29,7 +29,7 @@ public class LikhitGudisay extends Student
         /**
          * static numstudents is used to see class size
          */
-        //numStudents = numStudents + 1;
+        numStudents = numStudents + 1;
     }
     public void act() {
         if(Greenfoot.mouseClicked(this)){
@@ -79,9 +79,9 @@ public class LikhitGudisay extends Student
                 q=Greenfoot.ask("Semicolons are an absolute pain and are the worst thing to ever be implemented into Java. I sincerely hope that whoever created the semicolon is happy with the pain and suffereing they have caused. May I sit down?");
             }
         }
-        /*if (q.contains("student")){
+        if (q.contains("student")){
             q=Greenfoot.ask("There are " + numStudents + " students in this class. May I please sit down?");
-        }*/
+        }
         else {
             q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
