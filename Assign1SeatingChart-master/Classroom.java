@@ -33,10 +33,12 @@ public class Classroom extends World
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
-        
-        LikhitGudisay likhitgudisay = new LikhitGudisay("Likhit", "Gudisay", 1, 4);
-        addObject(likhitgudisay, 1, 4);
-        likhitgudisay.sitDown();
+
+        /* Example */
+        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
+        addObject(kilgoretrout, 1, 1);
+        kilgoretrout.sitDown();
+         
         
 
 
