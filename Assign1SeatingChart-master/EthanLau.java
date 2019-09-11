@@ -6,7 +6,7 @@ import static java.lang.Math.*;
  * Adapted from KilgoreTrout
  * 
  * @author Ethan Lau
- * @version 2.0 Aug 13, 2019
+ * @version 2.0 Sept 11, 2019
  */
 public class EthanLau extends Student implements SpecialInterestOrHobby, StudentAthlete 
 {
