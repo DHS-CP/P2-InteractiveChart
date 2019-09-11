@@ -28,19 +28,37 @@ public class Classroom extends World
      * Prepare the world for the start of the program. That is: create the initial
      * objects and add them to the world.
      */
-   
+
      private void prepare()
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
 
-        /* Example */
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
-         
+   
+       
+        
+     
+        
+        
+        
         
 
 
-    }  
+
+
+        
+     
+        
+        
+        Avi avi = new Avi("Avi", "Patel", 3, 4);
+        
+        addObject(avi, 1, 1);
+       
+        avi.sitDown();
+        setPaintOrder(cover.class, Avi.class);
+    
+   
+    
+    }
+    
 }
