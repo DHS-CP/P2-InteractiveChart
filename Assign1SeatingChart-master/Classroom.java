@@ -39,6 +39,9 @@ public class Classroom extends World
         addObject(manognaNamburu, 1, 1);
         manognaNamburu.sitDown();
          
+        RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
+        addObject(ritvik, 5, 3);
+        ritvik.sitDown();
         
 
 
