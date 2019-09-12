@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * The class "Student" is the parent class of the two child classes of "Student" ("SamikshaYelthimar" and "KilgoreTrout").
  * It contains the abstract class "Student" which is an extension of its parent class "Actor," and defines the instance variables that set up the student's actor. It also sets up how the images will be used in the program.
  * It sets up the basic behavior that will be inherited by the child classes.
- * 
+ * It also has the protected static integer variable numStudents that displays the number of students in our class
  * @author Samiksha Yelthimar
  * @version 9/11/2019
  */

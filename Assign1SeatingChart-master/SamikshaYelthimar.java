@@ -84,7 +84,7 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
      */
     public void answerQuestion(){
        
-        String q=Greenfoot.ask("Would you like to know what I found challenging about the AP Computer Science Summer Homework?");
+        String q=Greenfoot.ask("There are" + numStudents + "Would you like to know what I found challenging about the AP Computer Science Summer Homework?");
         if (q.contains("yes")){
             q=Greenfoot.ask("To me, the concept of an abstract class was confusing. Working with arraylists and operating on 2-D arrays was also difficult initially. Also, recursion and  the concept of overloading methods were challenging. Which one would you like to know more about?");
         
