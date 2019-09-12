@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Teacher
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Teacher\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ This\ class\ contains\ instance\ variables\ and\ allows\ the\ studnet\ to\ sit\ at\ their\ seat\ and\ say\ their\ name\ from\ the\ student\ class.\ \n\ \n\ @Soumya\ Kakarlapudi\ \n\ @September\ 11,\ 2019\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=myNameFile
 comment1.target=void\ sayName(java.lang.String)
 comment2.params=

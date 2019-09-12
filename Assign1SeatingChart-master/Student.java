@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.ArrayList;
+import java.util.ArrayList; 
 /**
- * Write a description of class Student here.
+ * This class sets all the instance variables for the objects of this class like the SoumyaKakarlapudi
+ * class. It also introduces the functions that allow the SoumyaKakarlapudi class to perform all of their 
+ * functions incorporated in the actor. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Soumya Kakarlapudi
+ * @September 11, 2019
  */
 public abstract class Student extends Actor
 {
@@ -13,9 +15,7 @@ public abstract class Student extends Actor
    public String lastName;
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
-   public boolean isActive;  // can you think of an algorithm that would allow you to use this
-                             // variable to use keyboard entry for all the instance of a student
-                             // that we will create?
+   public boolean isActive;  // when the student is doing the animation
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
    
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
@@ -56,7 +56,7 @@ public abstract class Student extends Actor
     }
     
     public void sayName(String myNameFile){
-        //Greenfoot.playSound(myNameFile);
+        Greenfoot.playSound(soundFile);
     }
     
     public void returnToSeat(){

@@ -4,10 +4,11 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * This class sets up the Classroom for all of the student classes to be in. It initalizes a world and adds the students
+ * as the variables. This creates a world with restrictions for sizing. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Soumya Kakarlapudi 
+ * @September 11, 2019
  */
 public class Classroom extends World
 {
@@ -26,7 +27,7 @@ public class Classroom extends World
     
     /**
      * Prepare the world for the start of the program. That is: create the initial
-     * objects and add them to the world.
+     * objects and add them to the world. This incorporates the SoumyaKakarlapudi class. 
      */
    
      private void prepare()
