@@ -158,31 +158,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
           returnToSeat();
         }
         
-        /*
-        // move right
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-        */
-       
-           //Greenfoot.delay(20);
-           // returnToSeat();
+      
     }
      public void myHobby(String s) {
          System.out.println(s);

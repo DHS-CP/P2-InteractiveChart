@@ -1,12 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.lang.Math;
 /**
  * The child class SamikshaYelthimar is an extension of the parent class Student. 
- * It has the constructor SamikshaYelthimar, 
+ * It implements TWO interfaces: SpecialInterestsOrHobby and CSALearnedSoFar to add information about SamikshaYelthimar's hobbies and what she has learned so far in AP CSA.
+ * This class defines where SamikshaYelthimar starts, moves to, and finishes, as well as when to be shown as a portrait picture or as a standing caricature picture.
+ * It also defines the animation's movement action, initiates the dialog session, and prints the information obtained from implementing the interfaces to the console.
+ * 
  * @author Samiksha Yelthimar Period 2 AP CSA
- * @version 9/5/2019
+ * @version 9/11/2019
  */
-public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
+public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby, CSALearnedSoFar  
 {
 
     /**
@@ -35,6 +38,9 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
      * This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      * There is a nested if statement in which if the SamikshaYelthimar actor is sitting down and then the mouse clicks on it, then the variable sitting will be set to file, the standing up image will be projected, and the audiofile saying the name will be laced
      *If the the mouse is not clicked on, the actor will excecute the answerQuestion() method and the sitDown() method.
+     *
+     *This method also calls the methods from the CSALearnedSoFar interface (the LearnedSoFar() method) and the SpecialInterestOrHobby interface (the myHobby() method).
+     *SamikshaYethimar's speical method is spinningClass, and describes the actor's special movement.
      */   
     public void act() 
     {
@@ -43,16 +49,15 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
             if (sitting){
                 sitting=false;
                 setImage(standingFile);
-                System.out.println(""); // Print a blank line to create space between any student output.
+                System.out.println("");
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to time travel!");
-            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
-            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
-            // Call the sitDown() method to move back  to your seat
+                myHobby("Some of my hobbies include cooking, traveling, reading, spending time with my family, and hiking. I also love swimming and playing badminton!");
+                LearnedSoFar("This year in AP CSA I've learned about concrete and abstract classes, 1-D and 2-D arrays, for and while loops, how to write algorithms, overriding/overloading methods, and how to use GitHub to manage a large group project.");
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+            
+                spinningClass();  
             }
             else {
                 answerQuestion();
@@ -70,10 +75,12 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
     }
     
     /**
-     * This void function allows the user to interact with the student through a question and answer interface, and provides a mechanism that allows the student to sit down once the Q&A session ends.  \
+     * This void function allows the user to interact with the student through a question and answer interface, and provides a mechanism that allows the student to sit down once the Q&A session ends.  
      * It contains a string operator that asks the question "Would you like to know what I found challenging about the AP Computer Science Summer Homework?".
      * Then, it contains several if statements (and in some cases else statements) that take the responses to the question, does character match, and then returns a response.
-     * The function completes
+     * The function completes after two levels of questioning is complete.
+     * 
+     * EXTRA CREDIT: I supported 2 levels of questioning upon the basic "list 5 things you found challenging about the AP CSA summer homework". I go on to ask if the user would like to know more about a topic, and then I list more information about that topic.
      */
     public void answerQuestion(){
        
@@ -89,8 +96,8 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
             q=Greenfoot.ask("Evaluating 2-D arrays and figuring out what element was at which cell was difficult. May I sit down now?" );
         
         }
-        if (q.contains("overloading methods")){
-            q=Greenfoot.ask("At first I was confused with how overloading methods was different to overriding methods. May I sit down now?");
+        if (q.contains("overloading")){
+            q=Greenfoot.ask("At first I was confused with how overloading methods, and how it was different to overriding methods. May I sit down now?");
         
         }
         if (q.contains("arraylists")){
@@ -108,30 +115,18 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
          if (q.equals("yes")){
             Greenfoot.delay(10);
             sitDown();
+            Greenfoot.stop();
         }
         
-        
-        
-        /*
-        String q=Greenfoot.ask("What would you like to know");
-        if (q.contains("hard")){
-            q=Greenfoot.ask("2D arrays, recursion, and merge sort... May I sit down?");
-        
-        }
-        else {
-          q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
-        }
-         if (q.equals("yes")){
-            Greenfoot.delay(10);
-            sitDown();
-        }
-      */       
     }
     /**
-     * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
-     * You can write your own methods to perform your own animation for your character/avatar.
+     * This is a local method specific to the SamikshaYelthimar class used to animate the character once the image is clicked on.
+     * >> There is a 2 by 2 2-D ARRAY used, and it is iterated though with a FOR-LOOP to animate its movement. 
+     * The image moves right, backwards, and then left in a random manner, and forward in a random manner as well.
+     * 
+     * >> The Math.random() method is used to generate random numbers that become the coordinate points of the actor's location.
      */
-    public void circleClass(){
+    public void spinningClass(){
         setLocation(0,0);
         Greenfoot.delay(10);
         
@@ -149,13 +144,14 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
         }      
          // move left
         for (int j=9;j>=0;j--){
-            // setLocation(j,5);
-            setLocation(Greenfoot.getRandomNumber(10),5);
-            Greenfoot.delay(10);
+           //setLocation(j,5);
+           setLocation((int) (Math.random()*20),5);
+           Greenfoot.delay(10);
         }      
               // move Forward
         for (int j=5;j>=0;j--){
-            setLocation(0,Greenfoot.getRandomNumber(10));
+            //setLocation(0,Greenfoot.getRandomNumber(10));
+            setLocation(0,(int)(Math.random()*15));
             //setLocation(0,j);
             Greenfoot.delay(10);
         }   
@@ -163,35 +159,27 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
        
           returnToSeat();
         }
-        // move right
         
-        /*
-        for (int i=1;i<=9;i++){
-            setLocation(i,0);
-            Greenfoot.delay(10);
-        }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
-            Greenfoot.delay(10);
-        }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        }      
-              // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
-            Greenfoot.delay(10);
-        }   
-        
-           Greenfoot.delay(20);
-           returnToSeat();
-           */
     }
+    
+    /**
+     * This is a void method obtained from the SpecialInterestOrHobby interface that prints out the student's special interests or hobby.
+     * It contains a print statement that prints the value of the parameter s.
+     * 
+     * @param s - a string that contains the description of the student's hobby.
+     */
      public void myHobby(String s) {
          System.out.println(s);
 }
+
+/**
+ *This is a void method from the CSALearnedSoFar interface that displays what the student has learned so far.
+ * 
+ * @param String b - takes in a string which holds the information about what the student has learned so far. 
+ */
+public void LearnedSoFar(String b){
+    System.out.println(b);
+}
+
 
 }
