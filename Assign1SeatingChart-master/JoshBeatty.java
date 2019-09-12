@@ -3,7 +3,7 @@ import java.util.Random;
 /**
  * The JoshBeatty class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Mr. Kaehms
+ * @author Josh Beatty
  * @version 2.0 Aug 13, 2019
  */
 public class JoshBeatty extends Student implements SpecialInterestOrHobby, NumberOfSiblings
