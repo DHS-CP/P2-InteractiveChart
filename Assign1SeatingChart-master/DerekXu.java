@@ -39,7 +39,7 @@ public class DerekXu extends Student implements SpecialInterestOrHobby, StudentL
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
-        numStudents++;
+        numStudents += 1;
         
         rgb = new int [2][4];
     }
@@ -60,6 +60,7 @@ public class DerekXu extends Student implements SpecialInterestOrHobby, StudentL
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting = true;
+        numStudents += 1;
     }
     
      /**
