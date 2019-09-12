@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=CSALearnedSoFar
-comment0.text=\n\ This\ interface\ is\ intended\ to\ be\ used\ to\ display\ information\ about\ what\ the\ student\ has\ learned\ so\ far\ in\ AP\ CSA.\n\ It\ has\ a\ void\ method\ "LearnedSoFar"\ that\ displays\ what\ the\ student\ has\ learned\ so\ far.\n\ \n\ @param\ String\ b\ -\ takes\ in\ a\ string\ which\ holds\ the\ information\ about\ what\ the\ student\ has\ learned\ so\ far.\n\ @author\ Samiksha\ Yelthimar\ \n\ @version\ 9/11/2019\n
-comment1.params=b
-comment1.target=void\ LearnedSoFar(java.lang.String)
+comment0.text=\r\n\ This\ interface\ is\ intended\ to\ be\ used\ to\ display\ information\ about\ what\ the\ student\ has\ learned\ so\ far\ in\ AP\ CSA.\r\n\ It\ has\ a\ void\ method\ "LearnedSoFar"\ that\ displays\ what\ the\ student\ has\ learned\ so\ far.\r\n\ \r\n\ @param\ String\ b\ -\ takes\ in\ a\ string\ which\ holds\ the\ information\ about\ what\ the\ student\ has\ learned\ so\ far.\r\n\ @author\ Samiksha\ Yelthimar\ \r\n\ @version\ 9/11/2019\r\n
+comment1.params=
+comment1.target=void\ LearnedSoFar()
 numComments=2

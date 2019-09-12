@@ -54,7 +54,7 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
                 sayName(soundFile);
             
                 myHobby("Some of my hobbies include cooking, traveling, reading, spending time with my family, and hiking. I also love swimming and playing badminton!");
-                LearnedSoFar("This year in AP CSA I've learned about concrete and abstract classes, 1-D and 2-D arrays, for and while loops, how to write algorithms, overriding/overloading methods, and how to use GitHub to manage a large group project.");
+                LearnedSoFar();
             
             
                 spinningClass();  
@@ -83,8 +83,17 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
      * EXTRA CREDIT: I supported 2 levels of questioning upon the basic "list 5 things you found challenging about the AP CSA summer homework". I go on to ask if the user would like to know more about a topic, and then I list more information about that topic.
      */
     public void answerQuestion(){
-       
-        String q=Greenfoot.ask("There are " + numStudents + " students in our class. Would you like to know what I found challenging about the AP Computer Science Summer Homework?");
+        String a=Greenfoot.ask("Would you like to know how many people are in the AP CSA class?");
+        if (a.contains("yes")){
+            a=Greenfoot.ask("There are " + numStudents + " in our class.");
+        
+        }
+        else {
+          a=Greenfoot.ask("I don't understand the question... May I sit down?"); 
+        }
+        
+        
+        String q=Greenfoot.ask("Would you like to know what I found challenging about the AP Computer Science Summer Homework?");
         if (q.contains("yes")){
             q=Greenfoot.ask("To me, the concept of an abstract class was confusing. Working with arraylists and operating on 2-D arrays was also difficult initially. Also, recursion and  the concept of overloading methods were challenging. Which one would you like to know more about?");
         
@@ -177,8 +186,8 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
  * 
  * @param String b - takes in a string which holds the information about what the student has learned so far. 
  */
-public void LearnedSoFar(String b){
-    System.out.println(b);
+public void LearnedSoFar(){
+    System.out.println("This year in AP CSA I've learned about concrete and abstract classes, 1-D and 2-D arrays, for and while loops, how to write algorithms, overriding/overloading methods, and how to use GitHub to manage a large group project.");
 }
 
 
