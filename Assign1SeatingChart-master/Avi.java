@@ -77,17 +77,20 @@ public class Avi extends Student implements SpecialInterestOrHobby
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  
+                circleClass();
+                answerQuestion();
+                
                 // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
             }
             else {
                 answerQuestion();
                 sitDown();
-                Greenfoot.setWorld(new Classroom());
+                
                 
             }
-                    
+            Greenfoot.setWorld(new Classroom());      
         }
+        
     } 
     
     /**
@@ -112,7 +115,7 @@ public class Avi extends Student implements SpecialInterestOrHobby
     public void answerQuestion(){
         Random rand = new Random();
         
-        String q=Greenfoot.ask("What would you like to know");
+        String q=Greenfoot.ask("You just learnt about my passions. What else would you like to know about me?");
         
             
         if (q.contains("hard")){
@@ -246,7 +249,8 @@ public class Avi extends Student implements SpecialInterestOrHobby
            Greenfoot.delay(70);
         }
        setImage(portraitFile);
-        setLocation(4,3); 
+       returnToSeat();
+       sitDown();
            
     }
     
