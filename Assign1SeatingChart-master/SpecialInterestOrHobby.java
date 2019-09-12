@@ -1,8 +1,10 @@
 /**
- * Write a description of interface SpecialInterestOrHobby here.
+ * This interface is intended to be used to display information about the student's hobbies.
+ * It contains a void method "myHobby" that displays information about a hobby that the student has.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @param myHobbySentence - is a string that describes in a few short phrases the student's hobbies.
+ * @author Samiksha Yelthimar 
+ * @version 9/11/2019
  */
 public interface SpecialInterestOrHobby  
 {

@@ -4,10 +4,12 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * The Classroom class is a child class of the parent class World.
+ * It sets up the dimensions and characteristics of the background of the seating chart and prepares all the objects to be used in the animation.
+ * It contains the constructor Classroom, and the void method prepare().
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Samiksha Yelthimar
+ * @version 9/11/2019
  */
 public class Classroom extends World
 {
@@ -39,9 +41,12 @@ public class Classroom extends World
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
          
-        RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
-        addObject(ritvik, 5, 3);
-        ritvik.sitDown();
+
+
+       SamikshaYelthimar samikshayelthimar = new SamikshaYelthimar ("Samiksha", "Yelthimar", 5, 6);
+        addObject(samikshayelthimar, 5, 6);
+        samikshayelthimar.sitDown();
+        
         
 
 

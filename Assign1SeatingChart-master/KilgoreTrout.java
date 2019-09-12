@@ -93,18 +93,35 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * classes, make sure to fully document so other students can use the same interface.
      */
     public void answerQuestion(){
-        String q=Greenfoot.ask("What would you like to know");
-        if (q.contains("hard")){
-            q=Greenfoot.ask("2D arrays, recursion, and merge sort... May I sit down?");
+        String q=Greenfoot.ask("What did you find challenging about the AP Computer Science Summer Homework?");
+        if (q.contains("arrays")){
+            q=Greenfoot.ask("To me, the concept of an abstract class was confusing. Working with arraylists and operating on 2-D arrays was also difficult initially. Also, recursion and  the concept of overloading methods were challenging. Which one would you like to know more about?");
         
         }
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
+        if (q.contains("arrays")){
+            q=Greenfoot.ask("Evaluating 2-D arrays and figuring out what element was at which cell was difficult. May I sit down now?" );
+        
+        }
+        if (q.contains("overloading methods")){
+            q=Greenfoot.ask("At first I was confused with how overloading methods was different to overriding methods. May I sit down now?");
+        
+        }
+        if (q.contains("arraylists")){
+            q=Greenfoot.ask(" thought it was difficult to create for loops with arraylists.");
+        
+        }
+        if (q.contains("recursion")){
+            q=Greenfoot.ask(" may I please sit down?");
+        
+        }
          if (q.equals("yes")){
             Greenfoot.delay(10);
             sitDown();
         }
+        
         
     }
     /**
@@ -114,28 +131,34 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
     public void circleClass(){
         setLocation(0,0);
          Greenfoot.delay(10);
-        // move right
-        for (int i=1;i<=9;i++){
+         
+        int move1 [][]=new int [2][3];
+        for (int i=0; i<move1.length; i++){
+            
+            for (int j=1;j<=9;j++){
             setLocation(i,0);
             Greenfoot.delay(10);
         }
         // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
+        for (int j=1;j<=5;j++){
+            setLocation(9,j);
             Greenfoot.delay(10);
         }      
          // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
+        for (int j=9;j>=0;j--){
+            setLocation(j,5);
             Greenfoot.delay(10);
         }      
               // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
+        for (int j=5;j>=0;j--){
+            setLocation(0,j);
             Greenfoot.delay(10);
         }   
-           Greenfoot.delay(20);
-           returnToSeat();
+          Greenfoot.delay(10);
+          returnToSeat();
+        }
+        
+      
     }
      public void myHobby(String s) {
          System.out.println(s);

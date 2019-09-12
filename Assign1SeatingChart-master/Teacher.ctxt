@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Teacher
+comment0.text=\r\n\ The\ Teacher\ class\ is\ a\ subclass\ of\ the\ actor\ class\ and\ the\ parent\ class\ of\ the\ MrKaehms\ class\r\n\ It\ defines\ behavior\ that\ will\ be\ inherited\ by\ the\ child\ class,\ such\ as\ the\ first\ and\ last\ names\ of\ the\ actor,\r\n\ its\ location,\ and\ when\ to\ play\ the\ name\ audiofile.\r\n\ \r\n\ @author\ Samiksha\ Yelthimar\ \r\n\ @version\ 9/11/2019\r\n
+comment1.params=myNameFile
+comment1.target=void\ sayName(java.lang.String)
+comment1.text=\r\n\ This\ void\ method\ plays\ sthe\ audiofile\ of\ the\ actor's\ name,\ when\ the\ argument\ is\ passed\ in.\r\n\ @param\ myNameFile\ -\ a\ string\ variable\ that\ is\ passed\ in\ to\ indicate\ which\ audio\ file\ to\ play.\r\n
+comment2.params=
+comment2.target=void\ sitDown()
+comment2.text=\r\n\ This\ void\ method\ will\ seat\ the\ actor\ back\ in\ its\ original\ position\ when\ it\ is\ called.\r\n
+numComments=3
