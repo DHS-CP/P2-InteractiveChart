@@ -43,8 +43,8 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         myRow=3;
         mySeat=1;
        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
@@ -52,7 +52,8 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
     
      /**
      * Act - do whatever the LacPhongNguyen actor wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * the 'Act' or 'Run' button gets pressed in the environment. Here I call the myHobby method 
+     * from the implemented class SpecialInterestOrHobby to print out my hobbies and interests.
      */   
     public void act() 
     {
@@ -91,17 +92,21 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
     public int numberOfSiblings(){
         return 2;//number of siblings LacPhong has
     }
+    /**
+     * These are methods called from the interface NumberOfSiblings
+     */
     public int numberOfBrothers(){
         return 1;//number of brothers LacPhong has
     }
+    /**
+     * These are methods called from the interface NumberOfSiblings
+     */
     public int numberOfSisters(){
         return 1;//number of sisters LacPhong has
     }
     /**
      * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
+     * some mechanism that allows the student to sit down once the Q&A session ends. 
      */
     public void answerQuestion(){
         String q=Greenfoot.ask("What would you like to know?");//asks user what he/she/it would like to know
@@ -165,6 +170,10 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
                 }
             }
         }
+     /* 
+      * Within this if-statement I use the methods numberOfSiblings()from the implemented class NumberOfSiblings to answer questions 
+      * about my siblings.
+      */
         if (q.contains("siblings")){//if user mentions siblings, code utilizes interface NumberOfSiblings to answer
             q=Greenfoot.ask("I have " + numberOfSiblings() + " but I like to consider by 2 other cousins as siblings because I have lived with them for my entire life... May I sit down?");
             q.toLowerCase();
@@ -175,6 +184,10 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
             else {
                 answerQuestion();
             }
+     /*  
+      * Within this if-statement I use the methods numberOfBrothers()from the implemented class NumberOfSiblings to answer questions 
+      * about my siblings.
+      */
         }
         if (q.contains("brother")){//if user mentions brother, code utilizes interface NumberOfSiblings to answer
             q=Greenfoot.ask("I have only " + numberOfBrothers() + " brother... May I sit down?");
@@ -187,6 +200,10 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
                 answerQuestion();
             }
         }
+     /* 
+      * Within this if-statement I use the methods numberOfSisters()from the implemented class NumberOfSiblings to answer questions 
+      * about my siblings.
+      */
         if (q.contains("sister")){//if user mentions sister, code utilizes interface NumberOfSiblings to answer
             q=Greenfoot.ask("I have only " + numberOfSisters() + " sister... May I sit down?");
             q.toLowerCase();
@@ -226,10 +243,20 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
     }
     /**
      * This is a local method specific to the LacPhong class used to animate the character once the image is clicked on.
-     * You can write your own methods to perform your own animation for your character/avatar.
+     * I used a 10x10 2D-array which was filled by Math.random through a for-loop. I also used several 
+     * for-loops to iterate through the coordinates of the world to move LacPhong around in a circle.
+     * I also use a for-loop to iterate through the 2D-array in order to randomize how LacPhong turns back and forth.
      */
     public void circleClass(){
+        /*
+         * Here I create a new 2D-array called list with dimensions of 10 x 10
+         */
         int[][] list = new int[10][10];//creates a 2d array named list
+        /*
+         * I use a for-loop here to increment through the 2D-array list to fill in with random 
+         * integers between 1-10 that are picked from Math.random. You can see a nested for-loop
+         * which allows the code to increment through all the rows and columns of the 2D-array.
+         */
         for (int i=0;i<10;i++){//loops through list and adds in random integers
             for (int n=0;n<10;n++){
             list[i][n] = (int)Math.random()*10+1;//Math.random from 1-10
@@ -238,6 +265,10 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         setLocation(1,3);//sets LacPhong to coordinate (1,3)
         Greenfoot.delay(10);
         // move right
+        /*
+         * Here are several for-loops I use to move LacPhong around the world in a circle which all
+         * utilize the setLocation() method to increment between rows and columns.
+         */
         for (int i=1;i<=9;i++){
             setLocation(i,3);//iterates through x values from 1-9
             turn(100);//spins LacPhong
@@ -261,6 +292,12 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
             turn(100);//turns LacPhong
             Greenfoot.delay(6);
         }
+        /*
+         * These last for-loops serve to finish the animation. The first one utilizes the 2D-array
+         * for values for LacPhong to spin in (ends up making him spin back and forth). The second one 
+         * makes it so that LacPhong returns to his original orientation while also increasing in size at 
+         * same time.
+         */
         for (int i=0; i<10;i++){
             turn(list[i][i]);//iterates through the 2d array list for random values to make LacPhpong spin
             Greenfoot.delay(6);
@@ -281,6 +318,9 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         
         
 }
+/**
+ * myHobby method from the implemented class SpecialHobbyAndInterests that takes in a string describing your hobbies and interests.
+ */
      public void myHobby(String s) {
          System.out.println(s);
 }
