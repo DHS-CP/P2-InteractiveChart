@@ -83,7 +83,7 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
      * EXTRA CREDIT: I supported 2 levels of questioning upon the basic "list 5 things you found challenging about the AP CSA summer homework". I go on to ask if the user would like to know more about a topic, and then I list more information about that topic.
      */
     public void answerQuestion(){
-        String a=Greenfoot.ask("Would you like to know how many people are in the AP CSA class?");
+       /* String a=Greenfoot.ask("Would you like to know how many people are in the AP CSA class?");
         if (a.contains("yes")){
             a=Greenfoot.ask("There are " + numStudents + " in our class.");
         
@@ -92,7 +92,7 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
           a=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
         
-        
+    */    
         String q=Greenfoot.ask("Would you like to know what I found challenging about the AP Computer Science Summer Homework?");
         if (q.contains("yes")){
             q=Greenfoot.ask("To me, the concept of an abstract class was confusing. Working with arraylists and operating on 2-D arrays was also difficult initially. Also, recursion and  the concept of overloading methods were challenging. Which one would you like to know more about?");
