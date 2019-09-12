@@ -4,6 +4,7 @@ import java.util.ArrayList;
  * The class "Student" is the parent class of the two child classes of "Student" ("SamikshaYelthimar" and "KilgoreTrout").
  * It contains the abstract class "Student" which is an extension of its parent class "Actor," and defines the instance variables that set up the student's actor. It also sets up how the images will be used in the program.
  * It sets up the basic behavior that will be inherited by the child classes.
+ * The static protected integer variable numStudents will be used as a class to determine the number of students that are in our class
  * 
  * @author Samiksha Yelthimar
  * @version 9/11/2019
@@ -17,7 +18,7 @@ public abstract class Student extends Actor
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
-  // static protected int numStudents = 0;                          // that we will create?
+   static protected int numStudents = 0;                          // that we will create?
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
    
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
