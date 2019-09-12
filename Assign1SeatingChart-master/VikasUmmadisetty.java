@@ -3,10 +3,10 @@ import java.lang.Math;
 /**
  * The VikasUmmadisetty class can be used as a model for your own class that represents you and your seating location in AP CSA
  * 
- * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
+ * @author Vikas Ummadisetty
+ * @version 2.0 Sept 11, 2019
  */
-public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby
+public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby, numberOfSiblings
 {
 
     /**
@@ -22,21 +22,18 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby
      * 
      */
     
-    static protected int numStudents = 0;
-    
-    public boolean animateStart = false;
     
     public VikasUmmadisetty(String f, String l, int r, int s) {
-        firstName=f;
-        lastName=l;
-        myRow=r;
-        mySeat=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+        firstName=f;        // Sets first name to f parameter
+        lastName=l;         // Sets last name to l parameter
+        myRow=r;            // Sets row number to r parameter
+        mySeat=s;           // Sets seat number to s parameter
+        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // refers to image file as firstnamelastname.jpg
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";   // refers to standing image file as firstnamelsatname-standing.jpg
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage(portraitFile);
-        sitting=true;
-        numStudents++;
+        setImage(portraitFile);     // Sets the image to the sitting image
+        sitting=true;               // Sets sitting variable to true
+        numStudents++;              // increments number of students by one
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -44,40 +41,35 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby
      * of the classroom.
      */
     public VikasUmmadisetty() {
-        firstName="Vikas";
-        lastName="Ummadisetty";
-        myRow=1;
-        mySeat=1;
+        firstName="Vikas";          // Sets first name to Vikas by default
+        lastName="Ummadisetty";     // Sets last name to Ummadisetty by default
+        myRow=1;                    // Sets row number to 1 by default
+        mySeat=1;                   // Sets first name to l by default
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        setImage(portraitFile);
-        sitting=true;
-        numStudents++;
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";             // refers to image file as firstnamelastname.jpg
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";    // refers to standing image file as firstnamelsatname-standing.jpg
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";               // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        setImage(portraitFile);     // Sets the image to the sitting image
+        sitting=true;               // Sets sitting variable to true
+        numStudents++;              // increments number of students by one
     }
     
      /**
-     * Act - do whatever the VikasUmmadisetty actor wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Controls the user interaction with the mouse click to run animations and dialogue sessions
      */   
     public void act() 
     {
-        // Add your action code here.
-        if(Greenfoot.mouseClicked(this)){
-            if (sitting){
-                sitting=false;
-                setImage(standingFile);
+
+        if(Greenfoot.mouseClicked(this)){       // When mouse is clicked on VikasUmmadisetty
+            if (sitting){                       
+                sitting=false;          // turn off standing
+                setImage(standingFile); // set image to standing file
                 System.out.println(""); // Print a blank line to create space between any student output.
-                getName();
-                sayName(soundFile);
+                getName();              // Call getName method
+                sayName(soundFile);     // Play sound file of name
             
-                myHobby("I like to time travel!");
-            // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
-            // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
-            // Call the sitDown() method to move back  to your seat
-            
-                //circleClass();  // Vikas Ummadisetty's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                myHobby("I like to make robots.");
+                
                 moveAround();
             }
             
@@ -96,40 +88,64 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby
         System.out.println("My name is " + firstName + " " + lastName);
     }
     /**
-     * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
+     * Allows user to interact with the student through a question and answer  interface and provides user the ability to instruct
+     * object to sit down. User can ask questions about hard topics over summer hw and number of students in the class
      */
     public void answerQuestion(){
-        String q=Greenfoot.ask("What would you like to know");
+        String q=Greenfoot.ask("What would you like to know");  // 
         if (q.contains("hard")){
-            int r = (int)((Math.random()+1) * 4);
-            System.out.println(r);
-            String hardTopics[] = {"recursions", "2d arrays", "merge sorting", "abstract classes", "interfaces"};
-            String hardTopicsDialogue[] = {"Recursions were a headache to understand!", "Merge sorting was pretty intuitive but hard to implement in code", "Abstract classes were interesting", "Intefaces are like contracts in a way"};
-            String q2=Greenfoot.ask("recusions, 2d arrays, merge sorting, abstract classes, and interfaces... Would you like to know about " + hardTopics[r] + "?");
-            if(q2.contains("yes")) {
-                String q3=Greenfoot.ask(hardTopicsDialogue[r] + "... May I sit down now");
-                if(q3.contains("yes")) sitDown();
+
+            String hardTopics[] = {"recursions", "2d arrays", "merge sorting", "abstract classes", "interfaces"};   // declare an array of hard topics
+            
+            // Declares an array of messages for further dialogue corresponding to array hardTopics
+            String hardTopicsDialogue[] = {"Recursions were a headache to understand! I actually had to write the logic on paper to understand how the call stack works.", 
+                "I always forget the syntax to initialize a 2D array!", "Merge sorting was pretty intuitive but hard to implement in code.", 
+                "Abstract classes were an interesting concept that I had not been exposed to previously.", 
+                "Intefaces are like contracts in a way. They specify what methods and member variables should be defined in the class."
+            };
+            
+            // Start further dialogue about hard topics
+            String q2=Greenfoot.ask("recusions, 2d arrays, merge sorting, abstract classes, and interfaces... Which topic would you like to know more about?");
+            
+            String q3 = "yes"; // Initialize answer to q3 with yes
+            
+            // Start further dialogue about what topics user wants to know more about
+            if(q2.contains("recursion")) {
+                q3 = Greenfoot.ask(hardTopicsDialogue[0] + " May I sit down now?");
             }
+            else if(q2.contains("array")) {
+                q3 = Greenfoot.ask(hardTopicsDialogue[1] + " May I sit down now?");
+            }
+            else if(q2.contains("merge")) {
+                q3 = Greenfoot.ask(hardTopicsDialogue[2] + " May I sit down now?");
+            }
+            else if(q2.contains("abstract")) {
+                q3 = Greenfoot.ask(hardTopicsDialogue[3] + " May I sit down now?");
+            }
+            else if(q2.contains("interface")) {
+                q3 = Greenfoot.ask(hardTopicsDialogue[4] + " May I sit down now?");
+            }
+            
+            // if user allows VikasUmmadisetty to sit down
+            if(q3.contains("yes")) {
+                sitDown();
+            }
+            
         }
-        if(q.contains("students")) {
+        // if user asks about how many students, outputs number of students in class
+        else if(q.contains("students")) {
             q=Greenfoot.ask("There are " + numStudents + " students in the class. May I sit down now?");
         }
-        if (q.equals("yes")){
-            Greenfoot.delay(10);
-            sitDown();
-        }
+        // if no question matches cases, asks to sit down
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
+          if(q.contains("yes")) sitDown();
         }
         
         
     }
     /**
-     * This is a local method specific to the VikasUmmadisetty class used to animate the character once the image is clicked on.
-     * You can write your own methods to perform your own animation for your character/avatar.
+     * Animation method that makes original Kilgore Trout object move. Mostly kept for reference
      */
     public void circleClass(){
         setLocation(0,0);
@@ -157,55 +173,57 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby
            Greenfoot.delay(20);
            returnToSeat();
     }
-    
+    /**
+     * Defines animation for main movements of VikasUmmadisetty object. Randomly generates coordinates for object to move at a fast rate of 1 ms per movement while spinning and randomly changing size.
+     * Then sets object back to original position and changes picture to standing file
+     */
     public void moveAround() {
-        sayName(soundFile);
-        setLocation(4,3);
-        Greenfoot.delay(10);
+        setLocation(4,3);       // Intialize position of object at 4,3
+        Greenfoot.delay(10);    // Have a short delay before beginning animation 
         
-        // Animation
+        int [][] twodarray= new int [1000][2];  // Declare and initialize a 2D array that is 1000 x 2
+        twodarray[0][0] = 4;                    // Initialize first x coordinate to 4
+        twodarray[0][1] = 3;                    // Initialize first y coordinate to 3
         
-        int [][] twodarray= new int [1000][2];
-        twodarray[0][0] = 4;
-        twodarray[0][1] = 3;
+        GreenfootImage originalImage = getImage();  // Get image of current image
+        int originalWidth = originalImage.getWidth();   // store original width of image
+        int originalHeight = originalImage.getHeight(); // store original height of image
         
-        GreenfootImage originalImage = getImage();
-        int originalWidth = originalImage.getWidth();
-        int originalHeight = originalImage.getHeight();
-        
-        
+        // Loops 999 times to initialize values of 2D array
         for(int i=1; i<=999; i++) {
+            // Randomly generate -1 or 1 to add it to the previous item in 2D array for both x and y coordinate
             twodarray[i][0] = (twodarray[i-1][0] + ((Math.random() > 0.5) ? 1 : -1));
             twodarray[i][1] = twodarray[i-1][1] + ((Math.random() > 0.5) ? 1 : -1);
             
-            if(twodarray[i][0] > 9) twodarray[i][0] = 9;
-            if(twodarray[i][0] < 0) twodarray[i][0] = 0;
-            if(twodarray[i][1] > 5) twodarray[i][1] = 5;
-            if(twodarray[i][1] < 0) twodarray[i][1] = 0;
+            if(twodarray[i][0] > 9) twodarray[i][0] = 9;   // Max boundary for x coordinate
+            if(twodarray[i][0] < 0) twodarray[i][0] = 0;   // Min boundary for x coordinate
+            if(twodarray[i][1] > 5) twodarray[i][1] = 5;   // Max boundary for y coordinate
+            if(twodarray[i][1] < 0) twodarray[i][1] = 0;   // Min boundary for y coordinate
             
-            System.out.println(twodarray[i][0] + " " + twodarray[i][1]);
+            //System.out.println(twodarray[i][0] + " " + twodarray[i][1]);    // Print coordinates to console for debugging
             
         }
         
+        // Loops 1000 times to set position based on 2D array values
         for(int i=0; i<=999; i++) {
-            turn(20);
-            GreenfootImage image = getImage();
-            int scale = ((Math.random() > .5) ? 5 : -5);
-            int newWidth = image.getWidth() + scale;
-            int newHeight = image.getHeight() + scale;
-            if(newWidth < 20) newWidth = 20;
-            if(newHeight < 20) newHeight = 20;
-            if(newWidth > 1000) newWidth = 1000;
-            if(newHeight > 1000) newHeight = 1000;
+            turn(20);                                       // Turns image 20 degrees per increment
+            GreenfootImage image = getImage();              // Get image in GreenfootImage object
+            int scale = ((Math.random() > .5) ? 5 : -5);    // Randomly choose -5 or 5
+            int newWidth = image.getWidth() + scale;        // Scale width based on random increment
+            int newHeight = image.getHeight() + scale;      // Scale height based on random increment
+            if(newWidth < 20) newWidth = 20;                // Min boundary for width
+            if(newHeight < 20) newHeight = 20;              // Min boundary for height
+            if(newWidth > 1000) newWidth = 1000;            // Max boundary for width
+            if(newHeight > 1000) newHeight = 1000;          // Max boundary for height
             
-            image.scale(  newWidth, newHeight);
-            setImage(image);
-            setLocation(twodarray[i][0], twodarray[i][1]);
-            Greenfoot.delay(1);
+            image.scale(  newWidth, newHeight);     // scale image to new width and height 
+            setImage(image);                        // set image to new dimensions
+            setLocation(twodarray[i][0], twodarray[i][1]);  // set location of random coordinate
+            Greenfoot.delay(1);                     // Delay animation by 1 ms
         }
-        setRotation(0);
-        originalImage.scale(originalWidth, originalHeight);
-        setImage(originalImage);
+        setRotation(0);     // Return rotation back to normal
+        originalImage.scale(originalWidth, originalHeight); 
+        setImage(standingFile);
         returnToSeat();
         
     }
