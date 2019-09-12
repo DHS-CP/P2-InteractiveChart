@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
+ * This is the josh class
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Josh Beatty
+ * @version 9/12/19
  */
 public abstract class Student extends Actor
 {
