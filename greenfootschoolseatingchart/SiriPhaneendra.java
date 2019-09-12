@@ -22,7 +22,7 @@ public class SiriPhaneendra extends Student implements SpecialInterestOrHobby {
      * 
      */
     public SiriPhaneendra(String f, String l, int r, int s) {
-       
+        numStudents ++;
         firstName=f;
         lastName=l;
         myRow=r;
@@ -104,7 +104,7 @@ public class SiriPhaneendra extends Student implements SpecialInterestOrHobby {
         String q=Greenfoot.ask("Hi there!! What would you like to know?"); 
         
         if(q.contains("number")){
-            q=Greenfoot.ask("Ahh yes, you want to know how many students we have in this class. We have " + " students."); //static variable: numStudents
+            q=Greenfoot.ask("Ahh yes, you want to know how many students we have in this class. We have " + numStudents + " students."); //static variable: numStudents
         }
             
         if (q.contains("hard")){
