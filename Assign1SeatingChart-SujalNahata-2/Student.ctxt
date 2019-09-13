@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Student
+comment0.text=\n\ This\ class\ is\ universal\ amongst\ all\ student\ subclasses.\ Thus,\ each\ student\ class\ must\ implement\ this\ code.\n\ \n\ @author\ (Sujal\ Nahata)\ \n\ @version\ (2.0)\n
+comment1.params=r
+comment1.target=void\ setRow(int)
+comment2.params=s
+comment2.target=void\ setSeat(int)
+comment3.params=
+comment3.target=void\ getName()
+comment4.params=
+comment4.target=void\ answerQuestion()
+comment5.params=
+comment5.target=int\ GetRow()
+comment6.params=
+comment6.target=int\ GetSeat()
+comment7.params=myNameFile
+comment7.target=void\ sayName(java.lang.String)
+comment8.params=
+comment8.target=void\ returnToSeat()
+comment9.params=
+comment9.target=void\ sitDown()
+numComments=10
