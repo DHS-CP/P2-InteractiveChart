@@ -140,6 +140,8 @@ public class ManognaNamburu extends Student
                 returnString = "2D arrays were difficult for me since I was not sure when to implement them, any other topic?";
            else if(q.contains("boolean"))
                 returnString = "Boolean statements take me some time to decode and I have to put in more attention to them , any other topic?";
+           else if(q.contains("students"))
+              returnString = "There are" " " + numStudents "" " students in this class";
            else if(q.contains("binary"))
                 returnString = "The conversion between a base ten to a binary number requires that I have to pay a closer attention, any other topic?";
            else if(q.contains("recursion"))
