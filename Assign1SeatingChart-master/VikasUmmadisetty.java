@@ -227,9 +227,32 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby,
         returnToSeat();
         
     }
-    
+    /**
+    * Prints my hobby from SpecialInterest or Hobby Interface
+    */
      public void myHobby(String s) {
          System.out.println(s);
 }
+    /**
+    * Returns the total number of siblings from NumberofSiblings interface
+    * @return int number of siblings
+    */
+    public int numberOfSiblings() {
+        return 1;
+    }
+    /**
+    * Returns the total number of brothers from NumberofSiblings interface
+    * @return int number of brothers
+    */
+    public int numberOfBrothers() {
+        return 0;
+    }
+    /**
+    * Returns the total number of sisters from NumberofSiblings interface
+    * @return int number of sisters
+    */
+    public int numberOfSisters() {
+        return 1;
+    }
 
 }
