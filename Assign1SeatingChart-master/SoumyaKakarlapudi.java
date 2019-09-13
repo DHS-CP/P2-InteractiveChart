@@ -101,7 +101,7 @@ public class SoumyaKakarlapudi extends Student implements SpecialInterestOrHobby
           
       }
         else if(q.contains("students")){
-            q=Greenfoot.ask("There are" + mySeat + "students in the class");
+            q=Greenfoot.ask("There are" + numStudents + "students in the class");
         }
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
