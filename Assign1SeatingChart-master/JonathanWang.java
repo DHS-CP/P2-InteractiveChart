@@ -4,7 +4,7 @@ import java.lang.Math;
  * The JonathanWang class defines the initial state and behavior of the Jonathan Wang actor. 
  * 
  * @author Jonathan Wang
- * @version 1.3
+ * @version 1.6
  */
 public class JonathanWang extends Student implements SpecialInterestOrHobby, StudentAthlete
 {
@@ -37,7 +37,7 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
-     * Adds one to the numStudents variable
+     * 
      */
     public JonathanWang() {
         firstName="Jonathan";
@@ -50,7 +50,7 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
-        numStudents++;
+        
     }
     
      /**
@@ -121,7 +121,7 @@ public class JonathanWang extends Student implements SpecialInterestOrHobby, Stu
         speecharray[12][0] = "badminton";
         speecharray[12][1] = "I refuse to believe that you don't know what that is. May I sit down?";
         speecharray[13][0] = "students";
-        speecharray[13][1] = "There are " + numStudents + " students in this class!";
+        speecharray[13][1] = "There are " + numStudents + " students in this class! May I sit down?";
         String q=Greenfoot.ask("What would you like to know? ");
         int loop = 1;
         while (loop ==1) {

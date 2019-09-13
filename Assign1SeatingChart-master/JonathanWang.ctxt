@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=JonathanWang
-comment0.text=\r\n\ The\ JonathanWang\ class\ defines\ the\ initial\ state\ and\ behavior\ of\ the\ Jonathan\ Wang\ actor.\ \r\n\ \r\n\ @author\ Jonathan\ Wang\r\n\ @version\ 1.3\r\n
+comment0.text=\r\n\ The\ JonathanWang\ class\ defines\ the\ initial\ state\ and\ behavior\ of\ the\ Jonathan\ Wang\ actor.\ \r\n\ \r\n\ @author\ Jonathan\ Wang\r\n\ @version\ 1.6\r\n
 comment1.params=f\ l\ r\ s
 comment1.target=JonathanWang(java.lang.String,\ java.lang.String,\ int,\ int)
 comment2.params=
 comment2.target=JonathanWang()
-comment2.text=\r\n\ Default\ constructor,\ if\ you\ don't\ pass\ in\ a\ name\ and\ seating\ location\r\n\ Adds\ one\ to\ the\ numStudents\ variable\r\n
+comment2.text=\r\n\ Default\ constructor,\ if\ you\ don't\ pass\ in\ a\ name\ and\ seating\ location\r\n\ \r\n
 comment3.params=
 comment3.target=void\ act()
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ JonathanWang\ actor\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
