@@ -43,6 +43,9 @@ public class Classroom extends World
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
          
+        RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
+        addObject(ritvik, 5, 3);
+        ritvik.sitDown();
         
         VikasUmmadisetty vikasu = new VikasUmmadisetty("Vikas", "Ummadisetty", 4,5);
         addObject(vikasu, 4, 5);
