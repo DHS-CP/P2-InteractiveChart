@@ -11,10 +11,6 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
 
     /**
      * Constructor for the JoshBeatty class.
-     * Constructors are special methods with the same exact name as the class name.  
-     * Constructors to not have return types.
-     * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
-     *  lists to initalize for different conditions (depending on what constructors have been written.
      * @param String f (firstname)
      * @param String l (lastname)
      * @param int r (row of seating arrangement)
@@ -35,8 +31,7 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
-     * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
-     * of the classroom.
+     * creates josh at  1,2 
      */
     public JoshBeatty() {
         numStudents += 1;
