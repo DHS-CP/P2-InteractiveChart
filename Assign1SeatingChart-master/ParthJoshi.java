@@ -52,6 +52,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
     /**
      * Act - do whatever the ParthJoshi actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * This method uses interfaces to show hobbies and siblings.
      */   
     public void act() 
     {
@@ -180,7 +181,9 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
     }
     /**
      * This is a local method specific to the ParthJoshi class used to animate the character once the image is clicked on.
+     * This method uses a 2D array and a random number generator to create random x,y coordinates for the image to travel
      * 
+     *
      */
     public void circleClass(){
         setLocation(0,0);
