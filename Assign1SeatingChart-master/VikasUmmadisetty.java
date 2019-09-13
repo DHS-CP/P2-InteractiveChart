@@ -6,7 +6,7 @@ import java.lang.Math;
  * @author Vikas Ummadisetty
  * @version 2.0 Sept 11, 2019
  */
-public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby, numberOfSiblings
+public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby, NumberOfSiblings
 {
 
     /**
