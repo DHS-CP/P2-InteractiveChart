@@ -1,6 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
+
  * Write a description of class BobKaehms here.
  *
  * @Soumya Kakarlapudi
@@ -12,6 +13,7 @@ public class MrKaehms extends Teacher //implements JustForFun
 
 
 
+
     public MrKaehms () {
 
     setLocation(mySeat,myRow);
@@ -19,6 +21,7 @@ public class MrKaehms extends Teacher //implements JustForFun
     }
 
     public void act()
+
     {
         // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
@@ -26,7 +29,9 @@ public class MrKaehms extends Teacher //implements JustForFun
          //   getName();
               //sayName("bobkaehms.wav");
         }
+
     }
+
     public void getName(){
         System.out.println("\n My name is Bob Kaehms");
     }
