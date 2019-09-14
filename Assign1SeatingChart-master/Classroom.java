@@ -68,13 +68,5 @@ public class Classroom extends World
         addObject(vikasu, 4, 5);
         vikasu.sitDown();
 
-        /*
-        while(true) {
-            if(vikasummadisetty.animateStart) {
-                animation();
-            }
-            Greenfoot.delay(10);
-        }
-        */
     }
 }
