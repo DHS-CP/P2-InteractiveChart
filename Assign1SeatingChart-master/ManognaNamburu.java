@@ -122,7 +122,9 @@ public class ManognaNamburu extends Student
                         }else CanISitDown();
                         }
                         
-               
+                else if(q.contains("students"))
+             q= Greenfoot.ask ("There are" + "" + numStudents);
+             
                else
             {
                 CanISitDown();
