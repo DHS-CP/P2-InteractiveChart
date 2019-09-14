@@ -51,6 +51,7 @@ public class ManognaNamburu extends Student
      * When the picture, sitting down, us is clicked the sitting turns to false and so the standing file takes over
      * The picture would they say the name 
      * The circle class would be called
+     * An interface is added, says hobby
      * Once the circle class runs and the questions run, the picture would sit down again.
      */   
     public void act() 
@@ -60,6 +61,7 @@ public class ManognaNamburu extends Student
             if (sitting){
                 sitting=false;
                 setImage(standingFile);
+                 myHobby("I like to spend time with friends!");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
@@ -173,6 +175,7 @@ public class ManognaNamburu extends Student
      * It first uses math random to move between random digits between 0 and 7.(Creates a zig zag pattern)
      * Then the rest use 2D arrays to move in an organized routine.
      * After its over, it goes back to its seat.
+     * Also calls the hobby method
      */
  
     public void circleClass(){
@@ -234,5 +237,8 @@ public class ManognaNamburu extends Student
            Greenfoot.delay(10);
            returnToSeat();
         }
+         public void myHobby(String s) {
+         System.out.println(s);
+}
     }
     
