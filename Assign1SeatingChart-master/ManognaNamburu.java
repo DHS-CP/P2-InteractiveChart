@@ -62,6 +62,7 @@ public class ManognaNamburu extends Student
                 sitting=false;
                 setImage(standingFile);
                  myHobby("I like to spend time with friends!");
+                 NumOfSiblings("I have 1, a younger sister");
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
@@ -241,6 +242,9 @@ public class ManognaNamburu extends Student
         }
          public void myHobby(String s) {
          System.out.println(s);
+}
+ public void NumOfSiblings(String p) {
+         System.out.println(p);
 }
     }
     
