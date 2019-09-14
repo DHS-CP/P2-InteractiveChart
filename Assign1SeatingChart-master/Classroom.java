@@ -42,6 +42,11 @@ public class Classroom extends World
 
         /* Example */
 
+        HrishikKandula hrishikkandula = new HrishikKandula("Hrishik", "Kandula", 2, 1);
+        addObject(hrishikkandula, 2, 1);
+        hrishikkandula.sitDown();
+
+
         SoumyaKakarlapudi soumyakakarlapudi = new SoumyaKakarlapudi("Soumya", "Kakarlapudi", 1, 7);
         addObject(soumyakakarlapudi, 1, 7);
         soumyakakarlapudi.sitDown();
