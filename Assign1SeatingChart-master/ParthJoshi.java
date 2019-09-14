@@ -56,7 +56,6 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
      */   
     public void act() 
     {
-        // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
             if (sitting){
                 sitting=false;
@@ -104,6 +103,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
         String q=Greenfoot.ask("What would you like to know");
         if (q.contains("hard")){
             q=Greenfoot.ask("2D arrays, Recursion, Interfaces, Insertion Sort, and Overriding Methods. Anything Specific you would like to know about?");
+            //Code for 2D array explanation
             if (q.contains("2D array")){
                 String a=Greenfoot.ask("2D arrays were hard for me because iterating through them with a for loop was complex. Now that I am using them often, I understand them better.... May I sit down?"); 
                 if (a.contains("yes")){
@@ -113,6 +113,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                     sitDown();
                     }
             }
+            //Code for Recursion explanation
             else if (q.contains("Recursion")){
                 String b=Greenfoot.ask("Recursion was hard for me because exiting a recursive loop was hard to understand.After I figured out how to create an exiting statement, My understanding of this concept increased... May I sit down?"); 
                 if (b.contains("yes")){
@@ -122,6 +123,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                     sitDown();
                     }
             }
+            //Code for Interfaces explanation
             else if (q.contains("Interfaces")){
                 String c=Greenfoot.ask("I didn't understand the difference between interfaces and abstract classes but thinking of an interface like a list of things to do helped me understand.... May I sit down?"); 
                 if (c.contains("yes")){
@@ -131,6 +133,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                     sitDown();
                     }
             }
+            //Code for Insertion Sort explanation
             else if (q.contains("Insertion Sort")){
                 String d=Greenfoot.ask("I didn't understand how the insertion sort worked but after watching an animation of the sort at work I understood.... May I sit down?"); 
                 if (d.contains("yes")){
@@ -140,6 +143,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                     sitDown();
                     }
             }
+            //Code for Overriding Methods explanation
             else if (q.contains("Overriding Methods")){
                 String e=Greenfoot.ask("I didn't understand the way inheritance effected the way a method was overided but after looking deeper into class hierarchy I understood... May I sit down?"); 
                 if (e.contains("yes")){
@@ -158,6 +162,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                     }
             }
         }
+        //Code for asking about numStudents
         else if (q.contains("students")){
             numberStudents();
             String r=Greenfoot.ask("There are "+numStudents+" students in our class.... May I sit down?");
@@ -181,15 +186,15 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
     }
     /**
      * This is a local method specific to the ParthJoshi class used to animate the character once the image is clicked on.
-     * This method uses a 2D array and a random number generator to create random x,y coordinates for the image to travel
-     * 
+     * This method uses a 2D array and a random number generator to create random x,y coordinates for the image to travel.
+     * This method uses delays and rotations to show movement.
      *
      */
     public void circleClass(){
         setLocation(0,0);
          Greenfoot.delay(10);
         
-        
+        //Code for 2D Array and Random Number Generator
         int [][] grid = new int [10][2];
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
