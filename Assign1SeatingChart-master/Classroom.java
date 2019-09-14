@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * @author (your name)
  * @version (a version number or a date)
 
-
+**/
 
 
 public class Classroom extends World
@@ -41,10 +41,6 @@ public class Classroom extends World
 
 
         /* Example */
-
-        KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
-        addObject(kilgoretrout, 1, 1);
-        kilgoretrout.sitDown();
 
         SoumyaKakarlapudi soumyakakarlapudi = new SoumyaKakarlapudi("Soumya", "Kakarlapudi", 1, 7);
         addObject(soumyakakarlapudi, 1, 7);

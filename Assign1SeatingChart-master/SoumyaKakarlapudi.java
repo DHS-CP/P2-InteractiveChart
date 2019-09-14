@@ -32,6 +32,7 @@ public class SoumyaKakarlapudi extends Student implements SpecialInterestOrHobby
        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+       numStudents ++;
     }
     /**
      * Default constructor, sets the constructors to a value for the name,row/seat, and image file when sitting or standing. 
@@ -48,6 +49,7 @@ public class SoumyaKakarlapudi extends Student implements SpecialInterestOrHobby
        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+       numStudents ++;
     }
     
      /**
