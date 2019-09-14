@@ -1,14 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class Student here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * This class sets all the instance variables for the objects of this class like the SoumyaKakarlapudi
+ * class. It also introduces the functions that allow the SoumyaKakarlapudi class to perform all of their
+ * functions incorporated in the actor.
+ *
+ * @Soumya Kakarlapudi
+ * @September 11, 2019
  */
 public abstract class Student extends Actor
 {
-       
+
    //Instance variables
    public String firstName;
    public String lastName;
@@ -18,24 +20,25 @@ public abstract class Student extends Actor
    protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created.
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
-   public boolean sitting;   // Is the student sitting or standing (default sitting)                         
-   
+
+   public boolean sitting;   // Is the student sitting or standing (default sitting)
+
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
-   
-   
-   
+
+
+
    public void setRow(int r){
        myRow=r;
     }
-    
+
     public void setSeat(int s){
        mySeat=s;
     }
-    
+
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
      public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
@@ -51,19 +54,19 @@ public abstract class Student extends Actor
      * Plays a sound file when called
      * @param String myNameFile  is the name of the sound file to play, ex "mySound.wav",
      */
-    
+
     public int GetRow(){
         return myRow;
     }
-    
+
     public int GetSeat(){
         return mySeat;
     }
-    
+
     public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+        Greenfoot.playSound(soundFile);
     }
-    
+
     public void returnToSeat(){
         setLocation(mySeat,myRow);
     }
@@ -71,6 +74,6 @@ public abstract class Student extends Actor
         returnToSeat();
         setImage(portraitFile);
         sitting=true;
-    }    
- 
+    }
+
 }

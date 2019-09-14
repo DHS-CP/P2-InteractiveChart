@@ -1,10 +1,10 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Teacher here.
+ * This class contains instance variables and allows the studnet to sit at their seat and say their name from the student class. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Soumya Kakarlapudi 
+ * @September 11, 2019 (a version number or a date)
  */
 public abstract class Teacher extends Actor
 {
@@ -15,7 +15,7 @@ public abstract class Teacher extends Actor
    public static final int mySeat=4;        // seats are left to right, 1-8
    
    public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+        //Greenfoot.playSound(myNameFile);
         
     }
     

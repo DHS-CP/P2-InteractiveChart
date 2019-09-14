@@ -4,11 +4,12 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
+
  * Write a description of class Classroom here.
  *
  * @author (your name)
  * @version (a version number or a date)
- */
+
 
 
 
@@ -31,7 +32,7 @@ public class Classroom extends World
 
     /**
      * Prepare the world for the start of the program. That is: create the initial
-     * objects and add them to the world.
+     * objects and add them to the world. This incorporates the SoumyaKakarlapudi class.
      */
      private void prepare()
     {
@@ -40,9 +41,17 @@ public class Classroom extends World
 
 
         /* Example */
+
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
+
+        SoumyaKakarlapudi soumyakakarlapudi = new SoumyaKakarlapudi("Soumya", "Kakarlapudi", 1, 7);
+        addObject(soumyakakarlapudi, 1, 7);
+        soumyakakarlapudi.sitDown();
+
+
+
 
         RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
         addObject(ritvik, 5, 3);
