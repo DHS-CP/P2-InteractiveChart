@@ -34,7 +34,7 @@ public abstract class Student extends Actor
     
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
-     public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
+    public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
                                             // in your own class file.
                                             // Requirement - prompt and accept a question in some fashion.
                                             // Based on question, give appropriate response.
