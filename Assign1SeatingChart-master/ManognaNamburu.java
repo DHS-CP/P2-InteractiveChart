@@ -27,6 +27,7 @@ public class ManognaNamburu extends Student
         soundFile="manognanamburu.wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents ++;
     }
     /**
      * The first and last name are set
@@ -45,6 +46,7 @@ public class ManognaNamburu extends Student
         soundFile="sounds/manognanamburu.wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents ++;
     }
     
      /**
