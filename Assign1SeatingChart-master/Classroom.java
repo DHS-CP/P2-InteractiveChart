@@ -51,8 +51,11 @@ public class Classroom extends World
         addObject(soumyakakarlapudi, 1, 7);
         soumyakakarlapudi.sitDown();
 
+        
 
-
+        ManognaNamburu manognaNamburu = new ManognaNamburu("Manogna", "Namburu", 1, 1);
+        addObject(manognaNamburu, 1, 1);
+        manognaNamburu.sitDown();
 
         RitviksiddhaPenchala ritvik = new RitviksiddhaPenchala();
         addObject(ritvik, 5, 3);
