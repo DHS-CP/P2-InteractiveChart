@@ -15,6 +15,7 @@ public class LikhitGudisay extends Student
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents = numStudents + 1;
     }
     public LikhitGudisay() {
         firstName="Likhit";
