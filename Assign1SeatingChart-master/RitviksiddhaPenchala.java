@@ -31,6 +31,7 @@ public class RitviksiddhaPenchala extends Student implements SpecialInterestOrHo
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents ++;
     }
     public RitviksiddhaPenchala(int r, int s) {
         firstName="Ritviksiddha";
@@ -43,6 +44,7 @@ public class RitviksiddhaPenchala extends Student implements SpecialInterestOrHo
         soundFile="kilgoretrout.wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents ++;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
