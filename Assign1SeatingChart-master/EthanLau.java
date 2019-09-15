@@ -34,7 +34,7 @@ public class EthanLau extends Student implements SpecialInterestOrHobby, Student
         setImage(portraitFile);
         sitting=true;  
         flag = true;
-        super.numStudents += 1;
+        numStudents += 1;
     }
     /**
      * Default Constructor of the EthanLau class. Defines the sitting down and standing pictures and the sound file associated with the EthanLau object. Sets defaults for first name, last name, 
@@ -52,7 +52,7 @@ public class EthanLau extends Student implements SpecialInterestOrHobby, Student
         setImage(portraitFile);
         sitting=true;
         flag = true;
-        super.numStudents += 1;
+        numStudents += 1;
     }
      
      /**
@@ -152,8 +152,8 @@ public class EthanLau extends Student implements SpecialInterestOrHobby, Student
               maySit(q);
             }
         }
-        else if (q.contains("how many")) {
-          q=Greenfoot.ask("There are " + super.numStudents + " students... May I sit down?");
+        else if (q.contains("how many")||q.contains("students")) {
+          q=Greenfoot.ask("There are " + numStudents + " students... May I sit down?");
           maySit(q);
         }
         else {
