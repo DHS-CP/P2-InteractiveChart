@@ -49,6 +49,12 @@ public class Classroom extends World
         joshbeatty.sitDown();
 
 
+        joshkoh jish = new joshkoh("Josh", "Koh", 2 , 3);
+        addObject(jish, 2, 3);
+        jish.sitDown();
+
+
+
         HrishikKandula hrishikkandula = new HrishikKandula("Hrishik", "Kandula", 2, 1);
         addObject(hrishikkandula, 2, 1);
         hrishikkandula.sitDown();
