@@ -10,8 +10,8 @@ public interface NumberOfSiblings
 {
     // method signatures - implement the signature below in your own class. Make sure to
     //                     match the parameter list and return type
-    public void numberOfSiblings(String SiblingSentence);
-    public void numberOfBrothers(String BrothersSentence);
-    public void numberOfSisters(String SistersSentence);
+    public int numberOfSiblings();
+    public int numberOfBrothers();
+    public int numberOfSisters();
     
 }

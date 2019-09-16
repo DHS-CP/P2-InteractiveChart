@@ -65,9 +65,6 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
                 sayName(soundFile);
             
                 myHobby("I like to teach children science. I do this by volunteering at a museum.");
-                numberOfSiblings("I have one sibling.");
-                numberOfBrothers("I have no brothers.");
-                numberOfSisters("My sibling is my one younger sister whom I love very much. ");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -239,24 +236,6 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
     */
      public void myHobby(String s) {
          System.out.println(s);
-    }
-    /**
-    * Uses the NumberOfSiblings interface to print the number of siblings I have
-    */
-     public void numberOfSiblings(String s) {
-         System.out.println(s);
-    }
-    /**
-    * Uses the NumberOfSiblings interface to print the number of Brother I have
-    */
-     public void numberOfBrothers(String s) {
-         System.out.println(s);
-    }
-    /**
-    * Uses the NumberOfSiblings interface to print the number of Sisters I have
-    */
-     public void numberOfSisters(String s) {
-         System.out.println(s);
-    }
+     }
 
 }
