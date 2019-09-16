@@ -32,6 +32,7 @@ public class RitviksiddhaPenchala extends Student implements SpecialInterestOrHo
         setImage(portraitFile);
         sitting=true;
         numStudents ++;
+        System.out.println(numStudents);
     }
     public RitviksiddhaPenchala(int r, int s) {
         firstName="Ritviksiddha";

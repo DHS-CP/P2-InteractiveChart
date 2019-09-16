@@ -33,6 +33,7 @@ public class joshkoh extends Student implements SpecialInterestOrHobby
         redboneFile="redbone.wav";
         setImage(portraitFile);
         sitting=true;
+        System.out.println(numStudents);
     }
     /**
      * This is the constructor that the joshkoh class defaults to if no parameters are called. This causes the object to move to 1,1 and set the 

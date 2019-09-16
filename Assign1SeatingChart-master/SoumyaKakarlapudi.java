@@ -33,6 +33,7 @@ public class SoumyaKakarlapudi extends Student implements SpecialInterestOrHobby
         setImage(portraitFile);
         sitting=true;
        numStudents ++;
+       System.out.println(numStudents);
     }
     /**
      * Default constructor, sets the constructors to a value for the name,row/seat, and image file when sitting or standing.

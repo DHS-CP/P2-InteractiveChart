@@ -16,6 +16,7 @@ public class LikhitGudisay extends Student
         setImage(portraitFile);
         sitting=true;
         numStudents = numStudents + 1;
+        System.out.println(numStudents);
     }
     public LikhitGudisay() {
         firstName="Likhit";

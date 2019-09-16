@@ -33,7 +33,8 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby,
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);     // Sets the image to the sitting image
         sitting=true;               // Sets sitting variable to true
-        numStudents++;              // increments number of students by one
+        numStudents++;
+        System.out.println(numStudents);// increments number of students by one
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -52,6 +53,7 @@ public class VikasUmmadisetty extends Student implements SpecialInterestOrHobby,
         setImage(portraitFile);     // Sets the image to the sitting image
         sitting=true;               // Sets sitting variable to true
         numStudents++;              // increments number of students by one
+        System.out.println(numStudents);
     }
     
      /**

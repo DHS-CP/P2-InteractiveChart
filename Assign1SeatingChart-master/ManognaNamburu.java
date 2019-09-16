@@ -28,6 +28,7 @@ public class ManognaNamburu extends Student
         setImage(portraitFile);
         sitting=true;
         numStudents ++;
+        System.out.println(numStudents);
     }
     /**
      * The first and last name are set

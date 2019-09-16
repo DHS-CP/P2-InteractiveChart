@@ -32,6 +32,7 @@ public class SamikshaYelthimar extends Student implements SpecialInterestOrHobby
         setImage(portraitFile);
         sitting=true;
         numStudents ++; 
+        System.out.println(numStudents);
     }
    
      /**

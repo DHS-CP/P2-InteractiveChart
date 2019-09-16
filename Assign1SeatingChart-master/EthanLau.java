@@ -35,6 +35,7 @@ public class EthanLau extends Student implements SpecialInterestOrHobby, Student
         sitting=true;  
         flag = true;
         numStudents += 1;
+        System.out.println(numStudents);
     }
     /**
      * Default Constructor of the EthanLau class. Defines the sitting down and standing pictures and the sound file associated with the EthanLau object. Sets defaults for first name, last name, 

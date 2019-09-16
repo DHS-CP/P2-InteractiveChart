@@ -28,6 +28,7 @@ public class JoshBeatty extends Student implements SpecialInterestOrHobby, Numbe
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        System.out.println(numStudents);
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
