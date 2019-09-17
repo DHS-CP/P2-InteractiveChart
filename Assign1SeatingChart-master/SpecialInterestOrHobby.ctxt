@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=SpecialInterestOrHobby
+comment0.text=\r\n\ This\ interface\ prints\ theString\ myHobbySentence\ when\ called\ for\ by\ the\ Actor.\ \r\n\ @return\ string\ type\r\n\ \r\n\ @author\ Harini\ Gurusankar\r\n\ @version\ 09/09/19\r\n
+comment1.params=myHobbySentence
+comment1.target=void\ myHobby(java.lang.String)
+numComments=2

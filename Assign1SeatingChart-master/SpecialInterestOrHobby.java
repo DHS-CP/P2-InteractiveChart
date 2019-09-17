@@ -1,8 +1,9 @@
 /**
- * Write a description of interface SpecialInterestOrHobby here.
+ * This interface prints theString myHobbySentence when called for by the Actor. 
+ * @return string type
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Harini Gurusankar
+ * @version 09/09/19
  */
 public interface SpecialInterestOrHobby  
 {

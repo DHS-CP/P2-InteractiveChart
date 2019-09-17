@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=StudentAthlete
+comment0.text=\r\n\ This\ interface\ prints\ the\ Sring\ mySportSentence\ when\ called\r\n\ @return\ String\ type\r\n\ \r\n\ @author\ Harini\ Gurusankar\r\n\ @version\ 09/09/19\r\n
+comment1.params=mySportSentence
+comment1.target=void\ mySport(java.lang.String)
+numComments=2
