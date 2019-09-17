@@ -10,6 +10,7 @@ import java.io.*;
 public class HariniGurusankar extends Student implements SpecialInterestOrHobby, StudentAthlete 
 {
 
+    boolean flag;
     /**
      * The following two methods sets the actor's image to the sitting position.
      * They also set the sound and standing image for future reference.
@@ -25,6 +26,8 @@ public class HariniGurusankar extends Student implements SpecialInterestOrHobby,
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        flag = true;
+        super.numStudents +=1;
     }
     public HariniGurusankar() {
        
