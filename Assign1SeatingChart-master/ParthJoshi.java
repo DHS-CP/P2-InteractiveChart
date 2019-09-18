@@ -6,7 +6,7 @@ import java.util.*;
  * @author Parth
  * @version 09/11/19
  */
-public class ParthJoshi extends Student implements SpecialInterestOrHobby,NumberOfSiblings
+public class ParthJoshi extends Student implements SpecialInterestOrHobby
 {
     
     /**
@@ -31,6 +31,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -47,6 +48,7 @@ public class ParthJoshi extends Student implements SpecialInterestOrHobby,Number
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     
     /**
