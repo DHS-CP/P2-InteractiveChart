@@ -32,10 +32,10 @@ public class Avi extends Student implements SpecialInterestOrHobby
         portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav"; 
-        cover="cover.png";// Make sure to name your sound files firstlast.wav, all lowercase!!!
+        String cover = "cover.png";// Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
-        
+        numStudents ++; 
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -51,9 +51,9 @@ public class Avi extends Student implements SpecialInterestOrHobby
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        
         setImage(portraitFile);
         sitting=true;
+        numStudents ++;
     }
     
      /**
