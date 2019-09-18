@@ -14,7 +14,6 @@ public abstract class Student extends Actor
    public int myRow;         // rows start in the front of class (1), and end in the back of class
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
-   protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created. 
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
@@ -32,9 +31,9 @@ public abstract class Student extends Actor
        mySeat=s;
     }
     
-    public abstract void  getName(); //This is an abstract methods. You will have to implement it
+    public abstract void  getName(); //This is an abstract method. You will have to implement it
                                      // in your own class file. See KilgoreTrout for an example
-     public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
+    public abstract void  answerQuestion(); //This is an abstract method. You will have to implement it
                                             // in your own class file.
                                             // Requirement - prompt and accept a question in some fashion.
                                             // Based on question, give appropriate response.
@@ -47,11 +46,11 @@ public abstract class Student extends Actor
      * Plays a sound file when called
      * @param String myNameFile  is the name of the sound file to play, ex "mySound.wav",
      */
-    
+    // method GetRow creates return type for the method
     public int GetRow(){
         return myRow;
     }
-    
+    // method GetSeat creates return type for the method
     public int GetSeat(){
         return mySeat;
     }
