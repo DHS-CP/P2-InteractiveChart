@@ -1,9 +1,18 @@
-# P2-InteractiveChart
+PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
-Hello, here are the instructions for our git flow. Each individual person will be creating a branch for your feature. We will be dividing the class into 4 sub groups based on table. Each group will have one master branch which you will merge your files to. Your local admin will be responsible for merging once you are done. For this project, please do not change the base files (eg. Kilgore Trout). If you are closest to the door, you are group 1 and farthest is 4. Name your individual branch (insert group number)-LastFirst ex 4-RejoMichael. If you have anyone questions let us know! - Michael and Siri
+PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
 
-TL;DR 
-You can upload your files to a new branch. The group build masters will then merge your files to the master
+VERSION or DATE: 09/11/2019
 
-rejo9211@mydusd.org
-phaneendra4355@mydusd.org
+AUTHORS:                    Mr. Kaehms and CSA students
+
+CONTRIBUTERS:               Parth Joshi
+
+INTRODUCTION:
+This is an interactive seating chart used to get to know 2nd period CSA. We each have our own animations and responses to questions about how many students there are and what hard concepts we learned in the summer.
+
+INSTALATION INSTRUCTIONS:
+To run this code, install greenfoot on your computer and open up the project.greenfoot file in greenfoot.
+
+USAGE:
+To use the code for this project, pull it from this repository and run it in greenfoot.

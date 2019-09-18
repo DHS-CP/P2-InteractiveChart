@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 **/
 
-
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
@@ -86,11 +85,14 @@ public class Classroom extends World
         addObject(likhitgudisay, 1, 4);
         likhitgudisay.sitDown();
 
+        ParthJoshi parthjoshi = new ParthJoshi("Parth", "Joshi", 1, 6);
+        addObject(parthjoshi, 1, 6);
+        parthjoshi.sitDown();
 
         VikasUmmadisetty vikasu = new VikasUmmadisetty("Vikas", "Ummadisetty", 4,5);
         addObject(vikasu, 4, 5);
         vikasu.sitDown();
-        
+
         Avi avipatel = new Avi("Avi", "Patel", 3, 4);
         addObject(avipatel, 3, 4);
         avipatel.sitDown();

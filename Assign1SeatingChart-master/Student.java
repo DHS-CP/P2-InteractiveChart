@@ -1,3 +1,4 @@
+
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
@@ -46,6 +47,7 @@ public abstract class Student extends Actor
        mySeat=s;
     }
 
+
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
 
                                      // in your own class file. See KilgoreTrout for an example
@@ -68,9 +70,11 @@ public abstract class Student extends Actor
     }
 
 
+
     public int GetSeat(){
         return mySeat;
     }
+
 
 
     public void sayName(String myNameFile){
@@ -88,6 +92,7 @@ public abstract class Student extends Actor
      * Executes the method setImage to set the image back to the portrait picture
      * Also resets the boolean sitting to true
      */
+
     public void sitDown(){
         returnToSeat();
         setImage(portraitFile);
