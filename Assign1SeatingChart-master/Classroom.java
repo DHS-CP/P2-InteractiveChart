@@ -38,11 +38,14 @@ public class Classroom extends World
 
     {
         // Add three lines to this doc with your class constructor and your row and seat number
-        // Make sure to match your first and last name to the class file you created.
+        // Make sure to match your first and lasts name to the class file you created.
 
 
         /* Example */
 
+        NihaSuravarjjala nihasuravarjjala = new NihaSuravarjjala("Niha", "Suravarjjala", 4, 4);
+        addObject(nihasuravarjjala, 4, 4);
+        nihasuravarjjala.sitDown();
 
         JoshBeatty joshbeatty = new JoshBeatty("Josh", "Beatty", 1, 2);
         addObject(joshbeatty, 2, 1);
