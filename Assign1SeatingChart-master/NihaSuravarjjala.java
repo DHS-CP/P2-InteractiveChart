@@ -34,6 +34,7 @@ public class NihaSuravarjjala extends Student implements SpecialInterestOrHobby,
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  //sets my sound file to my first and last name for reference 
         setImage(portraitFile); //sets the image in my seat to the portrait 
         sitting=true; //makes sure i am sitting not standing when program starts in my seat
+        numStudents++;
     }
     /**
      * NihaSuravarjjala - calls the method above and stores the values necessary in strings for the information
@@ -50,7 +51,8 @@ public class NihaSuravarjjala extends Student implements SpecialInterestOrHobby,
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg"; //calls the standing picture for when the picture is pressed
         soundFile= "nihasuravarjjala.wav"; //stores my sound file 
         setImage(portraitFile); //sets my image to the portrait file 
-        sitting=true; //sets my sitting to true 
+        sitting=true; //sets my sitting to true
+        numStudents++;
     }
     
      /**
