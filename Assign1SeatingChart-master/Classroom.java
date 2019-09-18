@@ -61,6 +61,11 @@ public class Classroom extends World
         jonathanwang.sitDown();
 
 
+        RupaliSarathy rupalisarathy = new RupaliSarathy("Rupali", "Sarathy", 4, 3);
+        addObject(rupalisarathy, 1, 1);
+        rupalisarathy.sitDown();
+
+
 
         HrishikKandula hrishikkandula = new HrishikKandula("Hrishik", "Kandula", 2, 1);
         addObject(hrishikkandula, 2, 1);
