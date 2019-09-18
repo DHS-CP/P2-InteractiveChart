@@ -43,6 +43,7 @@ public class Classroom extends World
 
         /* Example */
 
+
         JoshBeatty joshbeatty = new JoshBeatty("Josh", "Beatty", 1, 2);
         addObject(joshbeatty, 2, 1);
         joshbeatty.sitDown();
@@ -51,6 +52,10 @@ public class Classroom extends World
         joshkoh jish = new joshkoh("Josh", "Koh", 2 , 3);
         addObject(jish, 2, 3);
         jish.sitDown();
+
+        JonathanWang jonathanwang = new JonathanWang("Jonathan", "Wang", 4, 7);
+        addObject(jonathanwang, 4, 7);
+        jonathanwang.sitDown();
 
 
 
