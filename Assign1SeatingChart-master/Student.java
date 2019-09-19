@@ -16,6 +16,7 @@ public abstract class Student extends Actor
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
+   protected static int numStudents = 0; // creates a variable that is incremented everytime a student is created.            
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
    
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
@@ -44,7 +45,7 @@ public abstract class Student extends Actor
                                             //      might you work towards remembering it?
     /**
      * Plays a sound file when called
-     * @param String myNameFile  is the name of the sound file to play, ex "mySound.wav",
+     * @param String myNameFile  is the name of the sound file to play, ex "mySound.m4a",
      */
     
     public int GetRow(){
