@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class KilgoreTrout extends Student implements SpecialInterestOrHobby
 {
-
     /**
      * Constructor for the KilgoreTrout class.
      * Constructors are special methods with the same exact name as the class name.  
@@ -49,8 +48,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
         setImage(portraitFile);
         sitting=true;
     }
-    
-     /**
+    /**
      * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */   
@@ -75,11 +73,9 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
             else {
                 answerQuestion();
                 sitDown();
-            }
-                    
+            }     
         }
     } 
-    
     /**
      * Prints the first and last name to the console
      */
@@ -101,11 +97,10 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
         else {
           q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
         }
-         if (q.equals("yes")){
+        if (q.equals("yes")){
             Greenfoot.delay(10);
             sitDown();
         }
-        
     }
     /**
      * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
@@ -137,8 +132,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
            Greenfoot.delay(20);
            returnToSeat();
     }
-     public void myHobby(String s) {
+    public void myHobby(String s) {
          System.out.println(s);
-}
-
+    }
 }

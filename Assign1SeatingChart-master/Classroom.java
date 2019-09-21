@@ -4,17 +4,17 @@ import java.util.ArrayList;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
- * Write a description of class Classroom here.
+ * This class will be universal amongst all the students in the class. It simply creates the world with a green background and adds the students
+ * as actors.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Sujal Nahata) 
+ * @version (2.0)
  */
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
     /**
-     * Constructor for objects of class Classroom.
-     * 
+     * This is the constructor for objects of class Classroom.
      */
     public Classroom()
     {    
@@ -23,13 +23,11 @@ public class Classroom extends World
 
         prepare();
     }
-    
     /**
-     * Prepare the world for the start of the program. That is: create the initial
-     * objects and add them to the world.
+     * Prepare the world for the start of the program. That is: create the initial objects and add them to the world.
      */
    
-     private void prepare()
+    private void prepare()
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and last name to the class file you created.
@@ -38,7 +36,9 @@ public class Classroom extends World
         KilgoreTrout kilgoretrout = new KilgoreTrout("Kilgore", "Trout", 1, 1);
         addObject(kilgoretrout, 1, 1);
         kilgoretrout.sitDown();
-         
+        SujalNahata sujalnahata = new SujalNahata("Sujal", "Nahata", 2, 6);
+        addObject(sujalnahata, 2, 6);
+        sujalnahata.sitDown();
         
 
 
