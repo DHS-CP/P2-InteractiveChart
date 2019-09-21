@@ -65,6 +65,7 @@ public abstract class Student extends Actor
      * Obtains the row number the actor is in, and returns the value of myRow.
      */
 
+
     public int GetRow(){
         return myRow;
     }
@@ -72,6 +73,7 @@ public abstract class Student extends Actor
 
 
     public int GetSeat(){
+
         return mySeat;
     }
 
@@ -79,12 +81,14 @@ public abstract class Student extends Actor
 
     public void sayName(String myNameFile){
 
+
         Greenfoot.playSound(soundFile);
 
     }
 
     public void returnToSeat(){
         setLocation(mySeat,myRow);
+
     }
 
     /**
@@ -94,9 +98,9 @@ public abstract class Student extends Actor
      */
 
     public void sitDown(){
-        returnToSeat();
-        setImage(portraitFile);
-        sitting=true;
+        returnToSeat(0);//returns to seat
+        setImage(portraitFile);//returns image to original image
+        sitting=true;//boolean for sitting
     }
 
 }

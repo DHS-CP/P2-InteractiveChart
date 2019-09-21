@@ -12,4 +12,5 @@ public interface StudentAthlete
     //                     match the parameter list and return type
     
     public void mySport(String mySportSentence);
+    
 }
