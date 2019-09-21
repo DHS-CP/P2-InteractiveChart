@@ -78,7 +78,7 @@ public class DerekXu extends Student implements SpecialInterestOrHobby, StudentL
                 sayName(soundFile);
             
                 myHobby("I like to dab!"); //implements the specialinterestorhobby interface
-                myRoleInLeadership("I'm a robotics captain :D"); //implements the studentleadership interface
+                myRoleInLeadership(); //implements the studentleadership interface
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -209,8 +209,8 @@ public class DerekXu extends Student implements SpecialInterestOrHobby, StudentL
      * This method prints out one line of my leadership, which is robotics. 
      * uses the StudentLeadership interface
      */
-    public void myRoleInLeadership(String a) {
-        System.out.println(a);
+    public void myRoleInLeadership() {
+        System.out.println("I'm a robotics captain :D");
     }
 
 }
