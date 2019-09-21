@@ -1,27 +1,31 @@
 import greenfoot.*;
 
 /**
- * Write a description of class Teacher here.
+ * Teacher declares the classes to play the sound and sit GauravAgarwal down 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gaurav Agarwal
+ * @version Sep 8, 2019
  */
 public abstract class Teacher extends Actor
 {
-        //Instance variables
    public String firstName;
    public String lastName;
-   public static final int myRow=5;         // rows start in the front of class (1), and end in the back of class
-   public static final int mySeat=4;        // seats are left to right, 1-8
-   
-   public void sayName(String myNameFile){
+   public static final int myRow = 1;         
+   public static final int mySeat = 1;        
+   /**
+    * sayName plays the sound file that says the name
+    * @param String myNameFile (string of sound file)
+    */
+   public void sayName(String myNameFile) {
         Greenfoot.playSound(myNameFile);
-        
-    }
-    
-    public void sitDown(){
+   }
+   
+   /**
+    * sitDown sets the variable to sit down at the correct spot
+    */
+   public void sitDown() {
         setLocation(mySeat,myRow);
-    }
+   }
         
  
 }

@@ -1,17 +1,9 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
- * Write a description of interface NumberOfSiblings here.
+ * NumberOfSiblings allows Greenfoot to output a string that tells the user about my siblings
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gaurav Agarwal
+ * @version Sep 10, 2019
  */
-public interface NumberOfSiblings 
-{
-    // method signatures - implement the signature below in your own class. Make sure to
-    //                     match the parameter list and return type
-    public int numberOfSiblings();
-    public int numberOfBrothers();
-    public int numberOfSisters();
-    
+public interface NumberOfSiblings {
+    public void numberOfSiblings();
 }

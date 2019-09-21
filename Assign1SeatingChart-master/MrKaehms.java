@@ -1,32 +1,16 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;  
 /**
- * Write a description of class BobKaehms here.
+ * MrKaehms is a class that extends Teacher and uses a function to set location
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gaurav Agarwal
+ * @version Sep 10, 2019
  */
-public class MrKaehms extends Teacher //implements JustForFun
+public class MrKaehms extends Teacher 
 {
-    
-
-   
-    
-    public MrKaehms () {
-
-    setLocation(mySeat,myRow);
- 
-    }
-    
-    public void act() 
-    {
-        // Add your action code here.
-        if(Greenfoot.mouseClicked(this)){
-         //   getName(); 
-              sayName("bobkaehms.wav");
-        }
-    } 
-    public void getName(){
-        System.out.println("\n My name is Bob Kaehms");
-    }
+   /**
+    * MrKaehms sets the location to return back to the correct spot
+    */
+   public MrKaehms () {
+        setLocation(mySeat,myRow);
+   }
 }
