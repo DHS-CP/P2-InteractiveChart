@@ -31,6 +31,7 @@ public class SujalNahata extends Student implements SpecialInterestOrHobby
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * This constructor sets the location of the image of me based on the row and seat variables. Furthermore, it it determines the image and 
@@ -48,6 +49,7 @@ public class SujalNahata extends Student implements SpecialInterestOrHobby
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * This act method determines what happens when my image is clicked (or standing up). Once clicked, the method changes my image to the 
