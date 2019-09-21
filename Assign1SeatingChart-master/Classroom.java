@@ -142,5 +142,9 @@ public class Classroom extends World
         DerekXu derekxu = new DerekXu("Derek", "Xu", 5, 4);
         addObject(derekxu, 5, 4 );
         derekxu.sitDown();
+        
+        SiriPhaneendra siriphaneendra = new SiriPhaneendra("Siri", "Phaneendra", 3, 6);
+        addObject(siriphaneendra, 3, 6);
+        siriphaneendra.sitDown();
     }
 }
