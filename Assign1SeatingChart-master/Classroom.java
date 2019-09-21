@@ -109,6 +109,11 @@ public class Classroom extends World
         Avi avipatel = new Avi("Avi", "Patel", 3, 4);
         addObject(avipatel, 3, 4);
         avipatel.sitDown();
+        
+        GenePan gene = new GenePan("Gene", "Pan", 3, 3);
+        addObject (gene, 3, 3);
+        gene.sitDown();
+
 
     }
 }
