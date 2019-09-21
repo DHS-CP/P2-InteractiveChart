@@ -20,7 +20,6 @@ public class Classroom extends World
     /**
 
      * Constructor for objects of class Classroom.
-     *
 
      */
     public Classroom()
@@ -139,5 +138,9 @@ public class Classroom extends World
         TariqRahman tariqrahman = new TariqRahman("Tariq", "Rahman", 3,7);
         addObject(tariqrahman, 3, 7);
         tariqrahman.sitDown();
+
+        DerekXu derekxu = new DerekXu("Derek", "Xu", 5, 4);
+        addObject(derekxu, 5, 4 );
+        derekxu.sitDown();
     }
 }

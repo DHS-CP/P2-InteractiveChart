@@ -4,6 +4,7 @@ import java.util.ArrayList;
 /**
 
 
+
  * This class sets all the instance variables for the objects of this class like the SoumyaKakarlapudi
  * class. It also introduces the functions that allow the SoumyaKakarlapudi class to perform all of their
  * functions incorporated in the actor.
@@ -26,6 +27,7 @@ public abstract class Student extends Actor
 
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
+
 
    public boolean sitting;   // Is the student sitting or standing (default sitting)
 
