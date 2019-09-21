@@ -31,6 +31,7 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -48,6 +49,7 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     
      /**
@@ -306,11 +308,11 @@ public class LacPhongNguyen extends Student implements SpecialInterestOrHobby, N
         }
         
         for (int i=0; i<25;i++){
-            returnToSeat(list[5][5]);
+            returnToSeat();
             GreenfootImage image = getImage();//gets image for Greenfoot
             image.scale((image.getWidth()+3),(image.getHeight()+3));//makes images grow
             Greenfoot.delay(6);
-            returnToSeat(-(list[5][5]));//returns LacPhong to original orientation
+            returnToSeat();//returns LacPhong to original orientation
             Greenfoot.delay(6);
             
             

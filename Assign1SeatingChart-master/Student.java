@@ -98,7 +98,7 @@ public abstract class Student extends Actor
      */
 
     public void sitDown(){
-        returnToSeat(0);//returns to seat
+        returnToSeat();//returns to seat
         setImage(portraitFile);//returns image to original image
         sitting=true;//boolean for sitting
     }
