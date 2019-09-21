@@ -31,6 +31,7 @@ public class RinaKaura extends Student implements SpecialInterestOrHobby, Number
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -47,6 +48,7 @@ public class RinaKaura extends Student implements SpecialInterestOrHobby, Number
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     
      /**
