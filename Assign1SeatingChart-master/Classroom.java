@@ -65,6 +65,11 @@ public class Classroom extends World
         addObject(rupalisarathy, 1, 1);
         rupalisarathy.sitDown();
 
+        RinaKaura rinakaura = new RinaKaura("Rina", "Kaura", 2, 2);
+        addObject(rinakaura, 2, 2);
+        rinakaura.sitDown();
+
+
 
 
         HrishikKandula hrishikkandula = new HrishikKandula("Hrishik", "Kandula", 2, 1);
@@ -121,6 +126,6 @@ public class Classroom extends World
 
         DaylenBoen daylen = new DaylenBoen("Daylen", "Boen", 5, 3);
         addObject (daylen, 3, 3);
-        daylen.sitDown();  
+        daylen.sitDown();
     }
 }
