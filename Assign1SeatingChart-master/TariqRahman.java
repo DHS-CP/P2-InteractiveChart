@@ -31,6 +31,7 @@ public class TariqRahman extends Student implements SpecialInterestOrHobby
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     /**
      * Default constructor, if you don't pass in a name and seating location
@@ -48,6 +49,7 @@ public class TariqRahman extends Student implements SpecialInterestOrHobby
         soundFile="tariqrahman.wav";
         setImage(portraitFile);
         sitting=true;
+        numStudents++;
     }
     
      /**
