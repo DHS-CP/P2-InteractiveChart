@@ -7,7 +7,7 @@
  * @author Gaurav Agarwal
  * @version Sep 10, 2019
 */
-public class GauravAgarwal extends Student implements myHobbyInterest, CSALearnedSoFar, StudentLeadership, StudentAthlete, NumberOfSiblings{
+public class GauravAgarwal extends Student implements SpecialInterestOrHobby, CSALearnedSoFar, StudentLeadership, StudentAthlete, NumberOfSiblings{
        int array2d [] [] = new int [6] [10];
        boolean couldNotSit = false;
        /**
@@ -63,9 +63,9 @@ public class GauravAgarwal extends Student implements myHobbyInterest, CSALearne
                     getName();
                     Greenfoot.playSound("gauravagarwal.mp3");
                 
-                    myHobby();
+                    myHobby("I like to code, play video games, hike, and camp in my free time!");
                     learnedSoFar();
-                    mySport();
+                    mySport("I like to play basketball for fun");
                     numberOfSiblings();
                     myRoleInLeadership();
                     System.out.println("There are " + numStudents + " student(s) in the class");
@@ -177,12 +177,11 @@ public class GauravAgarwal extends Student implements myHobbyInterest, CSALearne
         * myHobby prints out the string from the abstract class
         * @param String s (string that is printed)
         */
-       public void myHobby() {
-            System.out.println("I like to code, play video games, hike, and camp in my free time!");
+       public void myHobby(String s) {
+            System.out.println(s);
        }
        /**
         * learnedSoFar prints out the string from the abstract class
-        * @param String t (string that is printed)
         */
        public void learnedSoFar(){
            System.out.println("I've learned a lot of about classes and initerfaces in Java in AP CSA");
@@ -191,19 +190,18 @@ public class GauravAgarwal extends Student implements myHobbyInterest, CSALearne
         * mySport prints out the string from the abstract class
         * @param String k (string that is printed)
         */
-       public void mySport() {
-           System.out.println("I like to play basketball for fun");
+       public void mySport(String k) {
+           System.out.println(k);
        }
        /**
         * numberOfSiblings prints out the string from the abstract class
-        * @param String l (string that is printed)
+        * @return 1 
         */
        public void numberOfSiblings(){
-           System.out.println("I have one sister");
+           return 1;
        }
        /**
         * myRoleInLeadership prints out the string from the abstract class
-        * @param String m (string that is printed)
         */
         public void myRoleInLeadership(){
           System.out.println("I am a leader in my boy scout troop");

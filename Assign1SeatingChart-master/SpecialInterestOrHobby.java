@@ -4,6 +4,6 @@
  * @author Gaurav Agarwal
  * @version Sep 10, 2019
  */
-public interface myHobbyInterest {
-    public void myHobby();
+public interface SpecialInterestOrHobby {
+    public void myHobby(String myHobbySentence);
 }

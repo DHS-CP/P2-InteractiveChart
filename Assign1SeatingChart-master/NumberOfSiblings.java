@@ -5,5 +5,5 @@
  * @version Sep 10, 2019
  */
 public interface NumberOfSiblings {
-    public void numberOfSiblings();
+    public int numberOfSiblings();
 }
