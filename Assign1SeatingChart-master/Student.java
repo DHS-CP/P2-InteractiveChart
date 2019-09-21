@@ -35,6 +35,7 @@ public abstract class Student extends Actor
 
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
+   public String song; //used to create song that is played after the name is said
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    public String redboneFile;
    protected static int numStudents = 0;
