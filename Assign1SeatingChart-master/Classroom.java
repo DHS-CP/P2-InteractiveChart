@@ -119,6 +119,8 @@ public class Classroom extends World
         addObject (gene, 3, 3);
         gene.sitDown();
 
-
+        DaylenBoen daylen = new DaylenBoen("Daylen", "Boen", 5, 3);
+        addObject (daylen, 3, 3);
+        daylen.sitDown();  
     }
 }
