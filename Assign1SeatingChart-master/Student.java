@@ -17,7 +17,6 @@ import java.util.ArrayList;
 public abstract class Student extends Actor
 {
 
-
    //Instance variables
    public String firstName;
    public String lastName;

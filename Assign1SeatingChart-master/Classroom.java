@@ -48,6 +48,10 @@ public class Classroom extends World
         /* Example */
 
 
+        HariniGurusankar harinigurusankar = new HariniGurusankar("Harini", "Gurusankar", 5, 1);
+        addObject(harinigurusankar, 1, 1);
+        harinigurusankar.sitDown();
+
         NihaSuravarjjala nihasuravarjjala = new NihaSuravarjjala("Niha", "Suravarjjala", 4, 4);
         addObject(nihasuravarjjala, 4, 4);
         nihasuravarjjala.sitDown();
@@ -142,7 +146,7 @@ public class Classroom extends World
         DerekXu derekxu = new DerekXu("Derek", "Xu", 5, 4);
         addObject(derekxu, 5, 4 );
         derekxu.sitDown();
-        
+
         SiriPhaneendra siriphaneendra = new SiriPhaneendra("Siri", "Phaneendra", 3, 6);
         addObject(siriphaneendra, 3, 6);
         siriphaneendra.sitDown();
