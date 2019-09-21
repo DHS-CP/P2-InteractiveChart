@@ -135,5 +135,9 @@ public class Classroom extends World
         DaylenBoen daylen = new DaylenBoen("Daylen", "Boen", 5, 3);
         addObject (daylen, 3, 3);
         daylen.sitDown();
+
+        TariqRahman tariqrahman = new TariqRahman("Tariq", "Rahman", 3,7);
+        addObject(tariqrahman, 3, 7);
+        tariqrahman.sitDown();
     }
 }
