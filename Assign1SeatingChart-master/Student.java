@@ -3,6 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
 
+
  * This class sets all the instance variables for the objects of this class like the SoumyaKakarlapudi
  * class. It also introduces the functions that allow the SoumyaKakarlapudi class to perform all of their
  * functions incorporated in the actor.
@@ -23,6 +24,7 @@ public abstract class Student extends Actor
    public int mySeat;        // seats are left to right, 1-8
    public boolean isActive;  // can you think of an algorithm that would allow you to use this
 
+
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
 
@@ -30,6 +32,7 @@ public abstract class Student extends Actor
 
 
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
@@ -41,6 +44,7 @@ public abstract class Student extends Actor
 
    public void setRow(int r){
        myRow=r;
+
     }
 
     public void setSeat(int s){
@@ -102,5 +106,6 @@ public abstract class Student extends Actor
         setImage(portraitFile);//returns image to original image
         sitting=true;//boolean for sitting
     }
+
 
 }

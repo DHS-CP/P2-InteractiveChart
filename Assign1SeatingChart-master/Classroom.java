@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 /**
 
+
  * Write a description of class Classroom here.
  *
  * @author (your name)
@@ -12,12 +13,15 @@ import java.util.ArrayList;
 
 **/
 
+
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
     /**
+
      * Constructor for objects of class Classroom.
      *
+
      */
     public Classroom()
     {
@@ -36,12 +40,14 @@ public class Classroom extends World
 
      private void prepare()
 
+
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and lasts name to the class file you created.
 
 
         /* Example */
+
 
         NihaSuravarjjala nihasuravarjjala = new NihaSuravarjjala("Niha", "Suravarjjala", 4, 4);
         addObject(nihasuravarjjala, 4, 4);
@@ -69,7 +75,9 @@ public class Classroom extends World
         addObject(rinakaura, 2, 2);
         rinakaura.sitDown();
 
-
+        SujalNahata sujalnahata = new SujalNahata("Sujal", "Nahata", 2, 6);
+        addObject(sujalnahata, 2, 6);
+        sujalnahata.sitDown();
 
 
         HrishikKandula hrishikkandula = new HrishikKandula("Hrishik", "Kandula", 2, 1);
