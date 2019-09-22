@@ -1,5 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import greenfoot.*;
 /**
 
 
@@ -8,8 +7,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @Soumya Kakarlapudi
  * @September 11, 2019
 
+
  */
-public class MrKaehms extends Teacher //implements JustForFun
+public class MrKaehms extends Teacher
 {
 
 

@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class Classroom extends World
 {
     private ArrayList<Object> listo = new ArrayList<Object>();
+
     /**
 
      * Constructor for objects of class Classroom.
@@ -26,7 +27,6 @@ public class Classroom extends World
     {
         // Create a new world with 10x6 cells with a cell size of 130x130 pixels.
         super(10, 6, 130);
-
         prepare();
     }
 
@@ -158,5 +158,9 @@ public class Classroom extends World
         SiriPhaneendra siriphaneendra = new SiriPhaneendra("Siri", "Phaneendra", 3, 6);
         addObject(siriphaneendra, 3, 6);
         siriphaneendra.sitDown();
+
+        GauravAgarwal gauravagarwal = new GauravAgarwal("Gaurav", "Agarwal", 1, 1);
+        addObject(gauravagarwal, 1, 1);
+        gauravagarwal.sitDown();
     }
 }

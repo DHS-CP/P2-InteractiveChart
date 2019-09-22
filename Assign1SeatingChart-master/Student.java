@@ -33,6 +33,7 @@ public abstract class Student extends Actor
 
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
 
+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
    public String song; //used to create song that is played after the name is said
@@ -40,7 +41,6 @@ public abstract class Student extends Actor
    public String redboneFile;
    protected static int numStudents = 0;
    Classroom clas = (Classroom) getWorld();
-
 
 
    public void setRow(int r){

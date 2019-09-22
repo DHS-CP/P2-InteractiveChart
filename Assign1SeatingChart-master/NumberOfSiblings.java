@@ -1,6 +1,5 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
+
  * Write a description of interface NumberOfSiblings here.
  *
  * @author (your name)
