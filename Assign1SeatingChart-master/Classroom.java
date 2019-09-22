@@ -159,7 +159,7 @@ public class Classroom extends World
         addObject(siriphaneendra, 3, 6);
         siriphaneendra.sitDown();
 
-        GauravAgarwal gauravagarwal = new GauravAgarwal("Gaurav", "Agarwal", 1, 1);
+        GauravAgarwal gauravagarwal = new GauravAgarwal("Gaurav", "Agarwal", 3, 2);
         addObject(gauravagarwal, 1, 1);
         gauravagarwal.sitDown();
     }

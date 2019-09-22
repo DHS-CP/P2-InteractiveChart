@@ -64,7 +64,7 @@ public class GauravAgarwal extends Student implements SpecialInterestOrHobby, CS
                     Greenfoot.playSound("gauravagarwal.mp3");
                 
                     myHobby("I like to code, play video games, hike, and camp in my free time!");
-                    learnedSoFar();
+                    LearnedSoFar();
                     mySport("I like to play basketball for fun");
                     numberOfSiblings();
                     myRoleInLeadership();
@@ -183,7 +183,7 @@ public class GauravAgarwal extends Student implements SpecialInterestOrHobby, CS
        /**
         * learnedSoFar prints out the string from the abstract class
         */
-       public void learnedSoFar(){
+       public void LearnedSoFar(){
            System.out.println("I've learned a lot of about classes and initerfaces in Java in AP CSA");
        }
        /**
@@ -197,8 +197,14 @@ public class GauravAgarwal extends Student implements SpecialInterestOrHobby, CS
         * numberOfSiblings prints out the string from the abstract class
         * @return 1 
         */
-       public void numberOfSiblings(){
+       public int numberOfSiblings(){
            return 1;
+       }
+       public int numberOfSisters(){
+           return 1;
+       }
+       public int numberOfBrothers(){
+           return 0;
        }
        /**
         * myRoleInLeadership prints out the string from the abstract class
