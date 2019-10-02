@@ -18,27 +18,27 @@ public abstract class Student extends Actor
 {
 
    //Instance variables
-   public String firstName;
-   public String lastName;
-   public int myRow;         // rows start in the front of class (1), and end in the back of class
-   public int mySeat;        // seats are left to right, 1-8
-   public boolean isActive;  // can you think of an algorithm that would allow you to use this
+   protected String firstName;
+   protected String lastName;
+   protected int myRow;         // rows start in the front of class (1), and end in the back of class
+   protected int mySeat;        // seats are left to right, 1-8
+   protected boolean isActive;  // can you think of an algorithm that would allow you to use this
 
                              // variable to use keyboard entry for all the instance of a student
                              // that we will create?
 
 
-   public boolean sitting;   // Is the student sitting or standing (default sitting)
+   protected boolean sitting;   // Is the student sitting or standing (default sitting)
 
 
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
 
 
-   public String portraitFile; // image used when sitting
-   public String standingFile; // image used when standing
-   public String song; //used to create song that is played after the name is said
-   public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
-   public String redboneFile;
+   protected String portraitFile; // image used when sitting
+   protected String standingFile; // image used when standing
+   protected String song; //used to create song that is played after the name is said
+   protected String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
+   protected String redboneFile;
    protected static int numStudents = 0;
    Classroom clas = (Classroom) getWorld();
 

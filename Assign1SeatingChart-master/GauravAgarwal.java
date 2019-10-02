@@ -46,6 +46,7 @@ public class GauravAgarwal extends Student implements SpecialInterestOrHobby, CS
            soundFile = "Sounds/"+firstName.toLowerCase()+lastName.toLowerCase()+".mp3";
            setImage(portraitFile);
            sitting = true;
+           numStudents++;
        }
         
        /**

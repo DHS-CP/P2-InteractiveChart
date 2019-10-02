@@ -43,7 +43,7 @@ public class Classroom extends World
     {
         // Add three lines to this doc with your class constructor and your row and seat number
         // Make sure to match your first and lasts name to the class file you created.
-
+        Student.numStudents = 0;
 
         /* Example */
         AravV aravvyawahare = new AravV("Arav", "Vyawahare", 4, 6);
