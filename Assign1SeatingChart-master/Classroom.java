@@ -46,6 +46,10 @@ public class Classroom extends World
         Student.numStudents = 0;
 
         /* Example */
+        KaushikIndukuri kaushikindukuri = new KaushikIndukuri();
+        addObject(kaushikindukuri, 3, 5);
+        kaushikindukuri.sitDown();
+        
         AravV aravvyawahare = new AravV("Arav", "Vyawahare", 4, 6);
         addObject(aravvyawahare, 4, 6);
         aravvyawahare.sitDown();
